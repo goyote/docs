@@ -3,6 +3,7 @@ body { color: #333; font: 13px/18px Tahoma, sans-serif; background: #f4f5c5 url(
 a { text-decoration: none; color: #ff4200; }
 a:hover, a:focus { color: #CB3600; }
 a:active { color: red; }
+a img { border: 0; }
 
 #container { width: 960px; margin: auto; background: #fff url(/assets/images/bg-logo.png) 12px 0 no-repeat;
 	border: 1px solid #EEE0B5; border-bottom: 0; border-top: 0; position: relative; }
