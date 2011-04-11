@@ -6,7 +6,7 @@
 	<li>Kohana Docs <strong>is not</strong> official documentation.</li>
 	<li>All of the code snippets in this website should be treated as examples only, and nothing else.</li>
 	<li>You are responsible for the consequences of using such snippets in your website or app.</li>
-	<li>A childish voice was used to cope with challenging task of narrating tedious, dry topics.</li>
+	<li>A childish voice was used to cope with the challenging task of narrating tedious, dry topics.</li>
 	<li>Have a glass of milk and cookies, it will make your life better :)</li>
 </ul>
 
