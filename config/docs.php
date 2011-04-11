@@ -58,7 +58,7 @@ return array(
 	'resources' => array(
 		'start_here' => array(
 			'welcome' => array(
-				'Official Documentation' => 'http://kohanaframework.org/guide',
+				'Official Documentation' => 'http://kohanaframework.org/documentation',
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php',
 				'KO2 Docs' => 'http://docs.kohanaphp.com/contents',
 			),

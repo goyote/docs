@@ -2,8 +2,6 @@
 <html lang="<?php echo I18n::$lang ?>">
 	<head>
 		<meta charset="<?php echo Kohana::$charset ?>">
-		<meta name="author" content="Gregorio Ramirez (goyote) <goyocode[at]gmail.com>">
-		<meta name="copyright" content="(c) 2011 Gregorio Ramirez">
 		<title><?php echo $article ?> | <?php echo $category ?> | Kohana Docs</title>
 		<link rel="stylesheet" href="/assets/css/global.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/goyoPHPDark.css">
@@ -66,7 +64,6 @@
 				</div>
 			</div>
 			<div id="footer">
-				<p>&copy; 2011 Gregorio Ramirez</p>
 			</div>
 			<a href="#top" id="top-link">Top of Page</a>
 		</div>

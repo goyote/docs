@@ -1,5 +1,15 @@
 <h1>Welcome to Kohana Docs!</h1>
 
+<p class="disclaimer"><strong>Disclaimer:</strong></p>
+
+<ul class="disclaimer">
+	<li>Kohana Docs <strong>is not</strong> official documentation.</li>
+	<li>All of the code snippets in this website should be treated as examples only, and nothing else.</li>
+	<li>You are responsible for the consequences of using such snippets in your website or app.</li>
+	<li>A childish voice was used to cope with challenging task of narrating tedious, dry topics.</li>
+	<li>Have a glass of milk and cookies, it will make your life better :)</li>
+</ul>
+
 <p>Kohana Docs is <s>waaaay better</s> third party documentation for the mighty <a href="http://kohanaframework.org/">Kohana framework</a> (yes, DO THAT, bow your head.) It's main goal is to dissolve whatever boredom I may have left during the night. Actually, the motive is, the <strong>dozens</strong> of <code>/(people|newbs)+/i</code> nagging that the current docs suck major ass. Honestly, there's nothing wrong with the current docs. In fact, I only see two problems:</p>
 
 <ol>
