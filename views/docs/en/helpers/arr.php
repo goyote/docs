@@ -14,7 +14,7 @@ Arr::is_assoc($numeric); // FALSE
 Arr::is_assoc($associative) // TRUE
 </pre>
 
-<p><strong class="caution">Caution:</strong> <code>is_assoc()</code>'s current implementation is very weak, in that it only accepts arrays as arguments; anything else will throw a fatal error. This goes against PHP's philosophy, imagine how retarded it would be if <code><a href="http://php.net/is_string">is_string()</a></code> only accepted strings as arguments? Ticket <a href="http://dev.kohanaframework.org/issues/3761">#3761</a>.</p>
+<p><strong class="caution">Caution:</strong> <code>is_assoc()</code>'s current implementation is very weak, in that it only accepts arrays as arguments; anything else will throw a fatal error. This goes against PHP's philosophy, imagine how impractical it would be if <code><a href="http://php.net/is_string">is_string()</a></code> only accepted strings as arguments? Ticket <a href="http://dev.kohanaframework.org/issues/3761">#3761</a>.</p>
 
 <p>In a real world scenario, you might want to check if the variable is an array first:</p>
 
@@ -55,12 +55,12 @@ if (Arr::is_array($competition))
 	$competition[] = 'ci';
 }
 
-unset($competition); // wut?
+unset($competition);
 </pre>
 
 <h2>path<code>($array, $path, $default = NULL, $delimiter = NULL)</code></h2>
 
-<p>As if directly inspired by JavaScript, <code>path()</code> lets you retrieve values from an existing array using dot notation!</p>
+<p>As if inspired by JavaScript, <code>path()</code> lets you retrieve values from an existing array using dot notation!</p>
 
 <pre class="brush:js">
 // JS

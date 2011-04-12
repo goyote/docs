@@ -171,7 +171,7 @@ $pattern = '/^([0-9]+(?:\.[0-9]+)?)(?:\s)?('.$accepted.')?$/Di';
 <p>Is that it? Sadly, no.</p>
 
 <ol>
-	<li><code>Num::bytes()</code> doesn't understand the unit: <code>kB</code>. Really? <code>kB</code>, <strong>the official symbol of kilobyte</strong> is not supported?</li>
+	<li><code>Num::bytes()</code> doesn't understand the unit: <code>kB</code>. If you're unaware, <code>kB</code> is the <strong>official symbol of kilobyte</strong>.</li>
 	<li><code>Text::bytes</code> supports both "1000" and "1024" multiples while <code>Num::bytes()</code> only supports "1024."</li>
 </ol>
 	
