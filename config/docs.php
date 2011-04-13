@@ -64,6 +64,12 @@ return array(
 			),
 		),
 		'helpers' => array(
+			'arr' => array(
+				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_arrays_in_kohana',
+				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/arr',
+				'API Browser' => 'http://kohanaframework.org/guide/api/Arr',
+				'PHP.net Reference' => 'http://php.net/manual/en/ref.array.php',
+			),
 			'cookie' => array(
 				'Official Documentation' => 'http://kohanaframework.org/guide/kohana/cookies',
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=sessions_and_cookies',

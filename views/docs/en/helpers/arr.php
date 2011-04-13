@@ -1,4 +1,4 @@
-<h1>Arr Class</h1>
+<h1>Arr</h1>
 
 <p><code>Arr</code> (short for "array") is a helper class that consists of a bunch of static methods, that can be treated as additions to the official list of array functions: <a href="http://php.net/manual/en/ref.array.php">http://php.net/manual/en/ref.array.php</a>.</p>
 

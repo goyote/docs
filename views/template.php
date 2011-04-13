@@ -47,7 +47,8 @@
 								<dl class="references">
 									<dt><?php echo __('External Resources') ?></dt>
 									<?php foreach ($resources as $resource => $href): ?>
-										<dd><?php echo HTML::anchor($href, '&rarr; '.__($resource)) ?></dd>
+										<?php $chunk = ($url['article'] !== 'welcome') ? Text::limit_chars($article, 10).' ' : ''; ?>
+										<dd><?php echo HTML::anchor($href, '&rarr; '.$chunk.__($resource)) ?></dd>
 									<?php endforeach ?>
 								</dl>
 							<?php endif ?>
@@ -62,8 +63,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="footer">
 			</div>
 			<a href="#top" id="top-link">Top of Page</a>
 		</div>
