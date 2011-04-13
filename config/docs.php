@@ -39,6 +39,7 @@ return array(
 			'href' => '/start_here/welcome',
 			'links' => array(
 				'Welcome' => '/start_here/welcome',
+				'Coding Standard' => '/start_here/coding_standard',
 			),
 		),
 		'Helpers' => array(
