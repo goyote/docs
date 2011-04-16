@@ -20,11 +20,11 @@ return array(
 				'name' => 'English',
 				'locale' => 'en_US.utf-8',
 			),
-//			'es' => array(
-//				'lang' => 'es',
-//				'name' => 'Español',
-//				'locale' => 'es_MX.utf-8',
-//			),
+			'es' => array(
+				'lang' => 'es',
+				'name' => 'Español',
+				'locale' => 'es_MX.utf-8',
+			),
 		),
 	),
 
@@ -39,7 +39,7 @@ return array(
 			'href' => '/start_here/welcome',
 			'links' => array(
 				'Welcome' => '/start_here/welcome',
-				'Coding Standard' => '/start_here/coding_standard',
+				'Coding Standards' => '/start_here/coding_standards',
 			),
 		),
 		'Helpers' => array(

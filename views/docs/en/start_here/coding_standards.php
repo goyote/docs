@@ -111,6 +111,8 @@ Class Omg {
 
 <h2>Security Check</h2>
 
+<p><strong>Update:</strong> Strictly speaking of application development, I don't feel to strong about this rule anymore. If you're outside the root, I think you should be allowed to use either one.</p>
+
 <p>Before we even go into this, your app, mod and sys dirs should be outside the DocumentRoot, but sometimes it's impossible to achieve if you're cheap or broke. Here's my pesonal thought on it, either all files exclude the check, or everyone includes it. Currently it's in, so include it for the sake of consistency <img src='http://kohanaftw.com/wordpress/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  (this is debatable, but the debate should focus on wheter we include it or exclude it GLOBALLY.)</p>
 
 <pre class="brush:php">
@@ -191,7 +193,7 @@ class Tacky extends Tacky_Core {}
 
 <p>The latter formatting is not achievable in a decent IDE ;)</p>
 
-<h2>Can't figure out how to title this</h2>
+<h2>Can't Figure Out How to Title This</h2>
 
 <p>Start with a default of two spaces, use more if needed.</p>
 
@@ -247,7 +249,7 @@ class Kohana_Arr {
 } // End arr &lt;- lol wrong class name
 </pre>
 
-<p>Tip: ctrl+UP_ARROW, look at the class name, then ctrl+DOWN_ARROW, write the name that's cached in your memory.</p>
+<p>Tip: ctrl+home, look at the class name, then ctrl+end, write the name that's cached in your memory.</p>
 
 <h2>Class Case</h2>
 
@@ -277,7 +279,7 @@ arr::get($arr, $key)
 &lt;?php endif; ?&gt;
 </pre>
 
-<h2>Short tags</h2>
+<h2>Short Tags</h2>
 
 <p>Writing open source? Avoid short tags.</p>
 
@@ -297,7 +299,6 @@ arr::get($arr, $key)
 // Readable
 &lt;?php if ($show): ?&gt;
 	&lt;div id=&quot;show&quot; /&gt;
-
 &lt;?php endif ?&gt;
 
 // Fuggly
@@ -448,7 +449,7 @@ public static function css_package($package)
 public static function css_package($package)
 </pre>
 
-<h2>NULL parameter</h2>
+<h2>NULL Parameter</h2>
 
 <p><code>NULL</code> isn't the only falsy value. Zero and an empty string are also falsy.</p>
 
@@ -466,14 +467,14 @@ function bar($foo = NULL)
 
 <p>Not a rule, but a reminder to be specific about your intentions.</p>
 
-<h2>Long lines</h2>
+<h2>Long Lines</h2>
 
 <p>I recently saw this which I liked.</p>
 
 <pre class="brush:php">
-// Better?
+// Readable
 $this->request->redirect(
-	this->request->uri(array('foo' => 'bar'))
+	this->request->uri(array('foo' => 'bar')),
 );
 
 // Uhlala
@@ -485,5 +486,22 @@ $this->request->redirect(
 
 // yuck
 $this->request->redirect(this->request->uri(array('foo' => 'bar')));
+</pre>
+
+<h2>Routes</h2>
+
+<pre class="brush:php">
+Route::set('docs', '(&lt;lang&gt;(/&lt;category&gt;(/&lt;article&gt;)))', 
+	array(
+		'lang' => '\w+',
+		'category' => '\w+',
+		'article' => '\w+',
+	))
+	->defaults(array(
+		'controller' => 'docs',
+		'action' => 'static',
+		'category' => 'start_here',
+		'article' => 'welcome',
+	));
 </pre>
 	

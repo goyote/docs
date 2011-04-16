@@ -12,6 +12,8 @@ return array(
 	'Home' => 'Inicio',
 	'Start Here' => 'Empieza Aquí',
 	'Welcome' => 'Bienvenido',
+	'Coding Standards' => 'Estándares de Código',
+	'Helpers' => 'Asistentes',
 
 	// General
 	'Back to the <a href="/">home page</a>?' => 'Regresar a la <a href="/">pagina principal</a>?',

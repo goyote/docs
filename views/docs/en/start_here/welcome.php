@@ -2,7 +2,7 @@
 
 <p>This website has a silly name because apparently the old one had the strange side effect of "harming" people... somehow. Now that we've changed it, that shouldn't happen anymore, so Hooray!</p>
 
-<p>Now, on to business. kowut is a warm place where the editor likes to spend his time talking about Kohana. If you find anything useful great, if not that's ok. Done, the intro is over. Go have fun.</p>
+<p>Now, on to business. kowut is a warm place where the editor likes to spend his time talking about <a href="http://kohanaframework.org">Kohana</a>. If you find anything useful great, if not that's ok. Done, the intro is over. Go have fun.</p>
 		
 <p class="disclaimer"><strong>Disclaimer:</strong></p>
 
