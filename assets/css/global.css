@@ -5,15 +5,15 @@ a:hover, a:focus { color: #00B7FF; }
 a:active { color: red; }
 a img { border: 0; }
 
-#container { width: 960px; margin: auto; background: #F1EDED;
-	border: 1px solid #8B8B8B; border-bottom: 0; border-top: 0; position: relative; }
+#container { width: 960px; margin: 10px auto; background: #F1EDED;
+	border: 1px solid #8B8B8B; position: relative; }
 #container > div { /*padding: 0 12px 6px;*/ }
 
 #logo { position: relative; top: 20px; left: 16px; }
 
 #nav { position: absolute; top: 45px; right: 0; width: 568px; float: right; list-style: none; }
 #nav > li { float: left; margin: 0 7px 0 0; }
-#nav a { font-size: 14px; color: #4A4141; display: block; padding: 6px 11px 5px; }
+#nav a { font-size: 14px; color: #4A4141; display: block; padding: 6px 11px; }
 #nav > li > a { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; background: #C3E6D6; }
 #nav > li > a:hover, #nav > li > a:focus { background: #CB3600; color: #fff;
 	-moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0;  }
