@@ -63,6 +63,9 @@ a img { border: 0; }
 #main .references dd a:hover,
 #main .references dd a:focus { border: 0; background: #E6E6E6; }
 #main .references dd a:active { background: red; color: #fff; }
+#main .image { background: #eee; text-align: center; padding: 15px 0; border: 1px solid #ccc; margin: 0 0 20px; }
+#main .image img { max-width: 600px; }
+#main .image p { margin: 10px 0 0; font-size: 12px; }
 
 #sidebar { width: 256px; float: right; margin: 12px 12px 0 0; }
 #sidebar .box { background: #e0b54d; margin: 0 0 12px; }
