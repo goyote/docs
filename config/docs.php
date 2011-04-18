@@ -51,6 +51,12 @@ return array(
 				'Text' => '/helpers/text',
 			),
 		),
+		'Tools' => array(
+			'href' => '/tools/phpstorm',
+			'links' => array(
+				'PhpStorm' => '/tools/phpstorm',
+			),
+		),
 	),
 
 	/**
