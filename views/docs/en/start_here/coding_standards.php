@@ -109,20 +109,6 @@ class Omg {
 Class Omg {
 </pre>
 
-<h2>Security Check</h2>
-
-<p><strong>Update:</strong> Strictly speaking of application development, I don't feel to strong about this rule anymore. If you're outside the root, I think you should be allowed to use either one.</p>
-
-<p>Before we even go into this, your app, mod and sys dirs should be outside the DocumentRoot, but sometimes it's impossible to achieve if you're cheap or broke. Here's my pesonal thought on it, either all files exclude the check, or everyone includes it. Currently it's in, so include it for the sake of consistency <img src='http://kohanaftw.com/wordpress/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  (this is debatable, but the debate should focus on wheter we include it or exclude it GLOBALLY.)</p>
-
-<pre class="brush:php">
-// Yes
-&lt;?php defined('SYSPATH') or die('No direct script access.');
-
-// Sorry try again
-&lt;?php
-</pre>
-
 <h2>Ugly Empty Line</h2>
 
 <pre class="brush:php">
@@ -231,7 +217,7 @@ class Tacky extends Tacky_Core {}
 
 <pre class="brush:php">
 // Correct
-} // End Deploy_Core
+} // Deploy_Core
 
 // Incorrect
 } &lt;- nothing? cut it out, rebel
@@ -242,14 +228,14 @@ class Tacky extends Tacky_Core {}
 <pre class="brush:php">
 // Thank you
 class Kohana_Arr {
-} // End Kohana_Arr
+} // Kohana_Arr
 
 // No thank you
 class Kohana_Arr {
 } // End arr &lt;- lol wrong class name
 </pre>
 
-<p>Tip: ctrl+home, look at the class name, then ctrl+end, write the name that's cached in your memory.</p>
+<p><strong>Tip:</strong> <code>Ctrl+Home</code>, look at the class name, then <code>Ctrl+End</code>, write the name that's cached in your memory.</p>
 
 <h2>Class Case</h2>
 
@@ -469,19 +455,19 @@ function bar($foo = NULL)
 
 <h2>Long Lines</h2>
 
-<p>I recently saw this which I liked.</p>
+<p>I recently saw this cool tip for wrapping long lines in a readable manner.</p>
 
 <pre class="brush:php">
 // Readable
 $this->request->redirect(
-	this->request->uri(array('foo' => 'bar')),
+	this->request->uri(array('foo' => 'bar'))
 );
 
 // Uhlala
 $this->request->redirect(
 	this->request->uri(array(
-		'foo' => 'bar'
-	)),
+		'foo' => 'bar',
+	))
 );
 
 // yuck
