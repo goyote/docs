@@ -1,4 +1,4 @@
-<h1>Coding Standards</h1>
+<h1>Stop Writing Code Like A Noob</h1>
 
 <p>In short: read the <a href="http://kohanaframework.org/3.1/guide/kohana/conventions">kohana coding guidelines</a>. It&#8217;s not about them being right, but about reaching a consistent pool of source code, where anyone can come in and feel right at home, as if they were tweaking their own source code. Sounds awesome? Well first off, go read the <a href="http://kohanaframework.org/3.1/guide/kohana/conventions">guidelines</a>. Step two, read my additions, defined below. Some of them are rules, some of them are corrections to the crap that I see out there. hf</p>
 	
