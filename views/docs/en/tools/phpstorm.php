@@ -79,7 +79,7 @@
 
 <h2>Code Completion</h2>
 
-<p>Autocompletion is what distinguishes a mere text editor from an its daddy the IDE. Autompletion is great for those long, hard to remember method names. Some IDEs like PhpEd only automplete methods. Phpstorm on the other hand, autocompletes EVERYTHING. Variables, constants, classes, keywords, you name it. Not only that, it also has the same support for other languages like HTML, JavaScript and CSS.</p>
+<p>Autocompletion is what distinguishes a mere text editor from an its daddy the IDE. Autompletion is great for those long, hard to remember method names. Some IDEs like PhpEd only automplete methods. PhpStorm on the other hand, autocompletes EVERYTHING. Variables, constants, classes, keywords, you name it. Not only that, it also has the same support for other languages like HTML, JavaScript and CSS.</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/code_completion1.png" alt="Code Completion 1"></p>
@@ -88,4 +88,19 @@
 	<p><img src="/assets/images/tools/phpstorm/code_completion4.png" alt="Code Completion 4"></p>
 	<p><img src="/assets/images/tools/phpstorm/code_completion5.png" alt="Code Completion 5"></p>
 </div>
+
+<h2>Complete Current Statement</h2>
+
+<p><em>Complete current statement</em> allows you to terminate a statement no matter where you cursor position is. Most of the time you'll use it to add a semicolon at the end of the line.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/complete_statement1.png" alt="Complete Statement 1"></p>
+	<p>To terminate the above statement, press <code>Ctrl+Shift+Enter</code>.</p>
+	<p><img src="/assets/images/tools/phpstorm/complete_statement2.png" alt="Complete Statement 2"></p>
+	<p>PhpStorm will also close any unclosed parenthesis.</p>
+</div>
+
+<h2>Start New Line</h2>
+
+<p>Say you have your cursor on a statement, and you want start writing on the next line. Normally you would press <code>End</code>, <code>Enter</code>. In PhpStorm if the current statement is already complete and you press <code>Ctrl+Shift+Enter</code>, the editor will start a new line for you and place your cursor at the start of it. This is functionality is equivalent to pressing <code>o</code> in vim.</p>
 
