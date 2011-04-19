@@ -102,5 +102,5 @@
 
 <h2>Start New Line</h2>
 
-<p>Say you have your cursor on a statement, and you want start writing on the next line. Normally you would press <code>End</code>, <code>Enter</code>. In PhpStorm if the current statement is already complete and you press <code>Ctrl+Shift+Enter</code>, the editor will start a new line for you and place your cursor at the start of it. This is functionality is equivalent to pressing <code>o</code> in vim.</p>
+<p>Say you have your cursor on a statement, and you want to start writing on the next line. Normally you would press <code>End</code>, <code>Enter</code>. In PhpStorm if the current statement is already complete and you press <code>Ctrl+Shift+Enter</code>, the editor will start a new line for you and place your cursor at the start of it. This functionality is equivalent to pressing <code>o</code> in vim.</p>
 
