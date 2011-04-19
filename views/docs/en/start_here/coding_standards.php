@@ -490,4 +490,16 @@ Route::set('docs', '(&lt;lang&gt;(/&lt;category&gt;(/&lt;article&gt;)))',
 		'article' => 'welcome',
 	));
 </pre>
+
+<h2>TRUE or FALSE</h2>
+
+<p>Comparison operators return a boolean value, you don't need a ternary operator to return the same thing, unless you want to be dead obvious about your intentions.</p>
+
+<pre class="brush:php">
+// Sufficient
+'packaging' => Kohana::$environment !== Kohana::DEVELOPMENT,
+
+// Redundant
+'packaging' => (Kohana::$environment != 'development') ? TRUE : FALSE,
+</pre>
 	
