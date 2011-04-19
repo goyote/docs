@@ -4,11 +4,28 @@
 
 <h2>is_assoc<code>(array $array)</code></h2>
 
-<p><code>is_assoc()</code> states whether an array is associative or not.</p>
+<p><code>is_assoc()</code> states whether an array is associative or not (returns a boolean value.)</p>
 
 <pre class="brush:php">
-$numeric = array('foo', 'bar'); // Numeric array (a.k.a indexed, sequential)
-$associative = array('foo' => 'foo', 'bar' => 'bar'); // Associative array
+// Numeric array (a.k.a indexed, sequential)
+$numeric = array('foo', 'bar');
+
+// Associative array
+$associative = array('foo' => 'foo', 'bar' => 'bar');
+
+// Numeric
+Array
+(
+    [0] => foo
+    [1] => bar
+)
+
+// Associative
+Array
+(
+    [foo] => foo
+    [bar] => bar
+)
 
 Arr::is_assoc($numeric); // FALSE
 Arr::is_assoc($associative) // TRUE
@@ -142,7 +159,7 @@ Array
 
 <h2>range<code>($step = 10, $max = 100)</code></h2>
 
-<p>The purpose of this method is unknown. As seen in the example below, <code>Arr::range()</code> behaves almost exactly like the native function <code><a href="http://us2.php.net/manual/en/function.range.php">range()</a></code>:</p>
+<p>The purpose of this method is unknown. As seen in the example below, <code>Arr::range()</code> behaves almost exactly like the native PHP function <code><a href="http://us2.php.net/manual/en/function.range.php">range()</a></code>:</p>
 
 <pre class="brush:php">
 Arr::range(8, 35);
@@ -204,7 +221,7 @@ public static function range($step = 10, $max = 100)
 error_reporting(E_ALL);
 
 $dumb = array();
-echo $dumb['whoami'];
+echo $dumb['whoami']; // The index "whoami" was never defined
 </pre>
 	<?php
 
@@ -217,10 +234,20 @@ echo $dumb['whoami'];
 $template = array(
 	'background' => 'blue',
 	'font' => 'arial',
+	// 'color' => 'blue',
 );
 
 // If no color defined, use red as the default
 $color = Arr::get($template, 'color', 'red');
+</pre>
+
+<p>Essentially, <code>Arr::get()</code> is a shortcut for doing redundant stuff like:</p>
+
+<pre class="brush:php">
+$email = isset($_POST['email']) ? $_POST['email'] : NULL;
+
+// Better?
+$email = Arr:get($_POST, 'email');
 </pre>
 
 <p>Naturally, you'll want to use this with form submissions (<code>$_GET</code>, <code>$_POST</code>, etc,) because in such a process you never know what to expect as people can simply disable JavaScript and send you bogus.</p>
@@ -321,7 +348,7 @@ Array
 
 <h2>unshift<code>( array & $array, $key, $val)</code></h2>
 
-<p><code>unshift()</code> is identical to <code><a href="http://php.net/manual/en/function.array-unshift.php">array_unshift()</a></code>, but for associative arrays.</p>
+<p><code>unshift()</code> is identical to the native PHP function <code><a href="http://php.net/manual/en/function.array-unshift.php">array_unshift()</a></code>, but for associative arrays.</p>
 
 <pre class="brush:php">
 $array = array(
@@ -329,6 +356,7 @@ $array = array(
 	'third' => 'third',
 );
 
+// Fills only the value, not the key
 array_unshift($array, 'first');
 
 // Result (not what we want)
@@ -339,13 +367,13 @@ Array
     [third] => third
 )
 
-// Remove the first item
+// Reset (remove the first item)
 array_shift($array);
 
 // Add a new item to the start
 Arr::unshift($array, 'first', 'first');
 
-// Result
+// Result (bingo!)
 Array
 (
     [first] => first
@@ -357,19 +385,20 @@ Array
 
 <h2>map<code>($callback, $array)</code></h2>
 
-<p><code>map()</code> is a recursive version of <code><a href="http://php.net/array_map">array_map()</a></code>, it applies the same callback to all elements in an array, including sub-arrays.</p>
+<p><code>map()</code> is a recursive version of the native PHP function <code><a href="http://php.net/array_map">array_map()</a></code>, it applies the same callback to all elements in an array, <strong>including sub-arrays</strong>.</p>
 
 <pre class="brush:php">
+// Data with XSS embedded
 $data = array(
 	&#x27;first_name&#x27; =&gt; &#x27;&lt;script&gt;alert(\&#x27;lol\&#x27;)&lt;/script&gt;Mary&#x27;,
 	&#x27;last_name&#x27; =&gt; &#x27;&lt;b&gt;Bob&lt;/b&gt;&#x27;,
 	&#x27;children&#x27; =&gt; array(
 		&#x27;&lt;i&gt;bobby&lt;/i&gt;&#x27;,
-		&#x27;susan&lt;IMG SRC=&quot;javascript:alert(\&#x27;XSS\&#x27;);&quot;&gt;&#x27;
-
+		&#x27;susan&lt;IMG SRC=&quot;javascript:alert(\&#x27;XSS\&#x27;);&quot;&gt;&#x27;,
 	),
 );
 
+// Only useful for single dimension arrays
 $data = array_map(&#x27;strip_tags&#x27;, $data);
 
 // Result
@@ -394,3 +423,40 @@ Array
 
 )
 </pre>
+
+<h2>merge<code>(array $a1, array $a2)</code></h2>
+
+<p><code>merge()</code> helps you merge multiple arrays. In some cases, it behaves similar to the native PHP function <a href="http://php.net/array_merge_recursive">array_merge_recursive().</a> The differences are better seen with an example.</p>
+
+<pre class="brush:php">
+$array1 = array(
+	'foo' => 'bar'
+);
+$array2 = array(
+	'foo' => array(
+		'bar'
+	),
+);
+
+Arr::merge($array1, $array2);
+Array
+(
+    [foo] => Array
+        (
+            [0] => bar
+        )
+
+)
+
+array_merge_recursive($array1, $array2);
+Array
+(
+    [foo] => Array
+        (
+            [0] => bar
+            [1] => bar
+        )
+
+)
+</pre>
+
