@@ -12,7 +12,7 @@
 
 <div class="image">
 	<img src="/assets/images/tools/phpstorm/go_to_file.png" alt="Go to File">
-	<p>Quickly locating and opening the <code>arr.php</code> file.</p>
+	<p>Quickly locate and open the <code>arr.php</code> file.</p>
 </div>
 
 <p>To search for a PHP class, press <code>Ctrl+N</code>.</p>
@@ -21,26 +21,27 @@
 	<img src="/assets/images/tools/phpstorm/go_to_class.png" alt="Go to Class">
 </p>
 
-<p>To search for a class field or method, press <code>Ctrl+Alt+Shift+N</code>. Sadly it won't find constants :(</p>
+<p>To search for a class field or method, press <code>Ctrl+Alt+Shift+N</code>. Sadly, it won't work for constants :(</p>
 
 <div class="image">
 	<img src="/assets/images/tools/phpstorm/go_to_symbol.png" alt="Go to Symbol">
-	<p>Quickly locating and opening the <code>HTML::chars</code> method.</p>
+	<p>Quickly locate and open the <code>HTML::chars</code> method.</p>
 </div>
 
 <h2>Duplicate Line</h2>
 
-<p>How do you normally duplicate a line in a text editor? <code>command+left</code>, <code>command+shift+right</code>, <code>ctrl+c</code>, <code>right</code>, <code>return</code>, <code>ctrl+v</code>? In PhpStorm you press <code>Ctrl+D</code>.</p>
+<p>How do you normally duplicate a line in a text editor? <code>Home</code>, <code>Ctrl+Shift+End</code>, <code>Ctrl+C</code>, <code>Right</code>, <code>Enter</code>, <code>Ctrl+V</code>? In PhpStorm you press <code>Ctrl+D</code>.</p>
 
-<p class="image">
+<div class="image">
 	<img src="/assets/images/tools/phpstorm/duplicate_line.png" alt="Duplicate Line">
-</p>
+	<p>Press <code>Ctrl+D</code> to duplicate the current line.</p>
+</div>
 
 <p>To remove a line press <code>Ctrl+Y</code>.</p>
 
 <h2>Whitespace Characters</h2>
 
-<p>Whitespace characters are important in ko, because it's in the standard to use tabs instead of spaces. Using tabs, allows everyone to set the tab width to something other than 4 spaces if they want. Using spaces just screws everyone. I find it funny when devs are forced to have invisibles on, just because there's no easy way to toggle them on and off. In PhpStorm you just press <code>Ctrl+Shift+F5</code> to toggle. I also like E text editor's approach, where it shows invisibles only when you highlight text, which allows you to a <code>Ctrl+A</code> to quickly inspect.</p>
+<p>Whitespace characters are important in ko, because it's in the standard to use tabs instead of spaces. Using tabs, allows everyone to set the tab width to something other than 4 spaces if they want. Using spaces just screws everyone. I find it funny when devs are forced to have invisibles on, just because there's no easy way to toggle them on and off. In PhpStorm you just press <code>Ctrl+Shift+F5</code> to toggle. I also like E text editor's approach, where it shows invisibles only when you highlight text, which allows you to <code>Ctrl+A</code> to quickly inspect.</p>
 
 <div class="image">
 	<img src="/assets/images/tools/phpstorm/whitespace_characters.png" alt="Whitespace Characters">
@@ -58,11 +59,33 @@
 
 <h2>Highlight Usages</h2>
 
-<p>I always miss this feature when using TextMate. Have you ever looked at a variable and wondered where exactly is it being used? With PhpStorm you simply place the cursor on top of the variable, class or function.</p>
+<p>I always miss this feature when using TextMate. Have you ever looked at a variable and wondered where exactly is it being used? With PhpStorm you simply place the cursor on top of the variable, class or function and all of its usages are highlighted.</p>
 
 <div class="image">
 	<img src="/assets/images/tools/phpstorm/highlight_usages.png" alt="Highlight Usages">
+	<p>You can clearly see where <code>$value</code> is being used.</p>
 </div>
 
+<h2>Refactor</h2>
 
+<p>Another must-have feature that's missing in mate is the ability to rename a variable safely on the fly. To do so in PhpStorm, simply place the cursor on top of the word, press <code>Shift+F6</code> and rename!</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/refactor1.png" alt="Refactor 1"></p>
+	<p><img src="/assets/images/tools/phpstorm/refactor2.png" alt="Refactor 2"></p>
+	<p><img src="/assets/images/tools/phpstorm/refactor3.png" alt="Refactor 3"></p>
+	<p>Renamed all instances of <code>$value</code> to <code>$new_value</code>.</p>
+</div>
+
+<h2>Code Completion</h2>
+
+<p>Autocompletion is what distinguishes a mere text editor from an its daddy the IDE. Autompletion is great for those long, hard to remember method names. Some IDEs like PhpEd only automplete methods. Phpstorm on the other hand, autocompletes EVERYTHING. Variables, constants, classes, keywords, you name it. Not only that, it also has the same support for other languages like HTML, JavaScript and CSS.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/code_completion1.png" alt="Code Completion 1"></p>
+	<p><img src="/assets/images/tools/phpstorm/code_completion2.png" alt="Code Completion 2"></p>
+	<p><img src="/assets/images/tools/phpstorm/code_completion3.png" alt="Code Completion 3"></p>
+	<p><img src="/assets/images/tools/phpstorm/code_completion4.png" alt="Code Completion 4"></p>
+	<p><img src="/assets/images/tools/phpstorm/code_completion5.png" alt="Code Completion 5"></p>
+</div>
 
