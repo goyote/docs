@@ -94,5 +94,12 @@ return array(
 				'API Browser' => 'http://kohanaframework.org/guide/api/Num',
 			),
 		),
+		'tools' => array(
+			'phpstorm' => array(
+				'Website' => 'http://www.jetbrains.com/phpstorm/',
+				'Blog' => 'http://blogs.jetbrains.com/webide/',
+				'YouTrack' => 'http://youtrack.jetbrains.net/issues/WI',
+			),
+		),
 	),
 );
