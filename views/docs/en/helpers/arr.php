@@ -4,7 +4,7 @@
 
 <h2>is_assoc<code>(array $array)</code></h2>
 
-<p><code>is_assoc()</code> states whether an array is associative or not (returns a boolean value.)</p>
+<p><code>is_assoc()</code> states whether an array is associative or not.</p>
 
 <pre class="brush:php">
 // Numeric array (a.k.a indexed, sequential)
@@ -221,12 +221,12 @@ public static function range($step = 10, $max = 100)
 error_reporting(E_ALL);
 
 $dumb = array();
-echo $dumb['whoami']; // The index "whoami" was never defined
+echo $dumb['whoami'];
 </pre>
 	<?php
 
 ?>
-<p>The previous code snippet causes your code to barf and display the following message "<strong>Notice</strong>: Undefined index: whoami&hellip;"</p>
+<p>The previous code snippet causes your code to barf and display the following message <code>"<strong>Notice</strong>: Undefined index: whoami&hellip;"</code></p>
 
 <p>Sure you can surpress notices with <code>error_reporting(E_ALL ^ E_NOTICE)</code>, but <code>get()</code> is a wiser choice because it allows you to define a default value in case the index doesn't exist.</p>
 
@@ -346,6 +346,13 @@ Array
 )
 </pre>
 
+<p><code>pluck()</code> would be more useful if it allowed you to retrieve several items instead of only one, as it currently does. e.g.:
+
+<pre class="brush:php">
+// Get the name & id's of all the employees
+$ids = Arr::pluck($employees, array('id', 'name')); // <- make it happen ;)
+</pre>
+
 <h2>unshift<code>( array & $array, $key, $val)</code></h2>
 
 <p><code>unshift()</code> is identical to the native PHP function <code><a href="http://php.net/manual/en/function.array-unshift.php">array_unshift()</a></code>, but for associative arrays.</p>
@@ -356,7 +363,6 @@ $array = array(
 	'third' => 'third',
 );
 
-// Fills only the value, not the key
 array_unshift($array, 'first');
 
 // Result (not what we want)
@@ -367,7 +373,7 @@ Array
     [third] => third
 )
 
-// Reset (remove the first item)
+// Remove the first item
 array_shift($array);
 
 // Add a new item to the start
@@ -388,7 +394,7 @@ Array
 <p><code>map()</code> is a recursive version of the native PHP function <code><a href="http://php.net/array_map">array_map()</a></code>, it applies the same callback to all elements in an array, <strong>including sub-arrays</strong>.</p>
 
 <pre class="brush:php">
-// Data with XSS embedded
+// We want to remove the XSS embedded in the following data
 $data = array(
 	&#x27;first_name&#x27; =&gt; &#x27;&lt;script&gt;alert(\&#x27;lol\&#x27;)&lt;/script&gt;Mary&#x27;,
 	&#x27;last_name&#x27; =&gt; &#x27;&lt;b&gt;Bob&lt;/b&gt;&#x27;,
@@ -398,7 +404,7 @@ $data = array(
 	),
 );
 
-// Only useful for single dimension arrays
+// The native function is only useful for single dimension arrays
 $data = array_map(&#x27;strip_tags&#x27;, $data);
 
 // Result
