@@ -394,7 +394,7 @@ Array
 <p><code>map()</code> is a recursive version of the native PHP function <code><a href="http://php.net/array_map">array_map()</a></code>, it applies the same callback to all elements in an array, <strong>including sub-arrays</strong>.</p>
 
 <pre class="brush:php">
-// We want to remove the XSS embedded in the following data
+// Data with embedded XSS
 $data = array(
 	&#x27;first_name&#x27; =&gt; &#x27;&lt;script&gt;alert(\&#x27;lol\&#x27;)&lt;/script&gt;Mary&#x27;,
 	&#x27;last_name&#x27; =&gt; &#x27;&lt;b&gt;Bob&lt;/b&gt;&#x27;,
