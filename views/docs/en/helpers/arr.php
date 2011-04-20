@@ -391,7 +391,7 @@ Array
 
 <h2>map<code>($callback, $array)</code></h2>
 
-<p><code>map()</code> is a recursive version of the native PHP function <code><a href="http://php.net/array_map">array_map()</a></code>, it applies the same callback to all elements in an array, <strong>including sub-arrays</strong>.</p>
+<p><code>map()</code> is a recursive version of <code><a href="http://php.net/array_map">array_map()</a></code>, it applies the same callback to all elements in an array, <strong>including sub-arrays</strong>.</p>
 
 <pre class="brush:php">
 // Data with embedded XSS
