@@ -228,7 +228,7 @@ echo $dumb['whoami'];
 ?>
 <p>The previous code snippet causes your code to barf and display the following message <code>"<strong>Notice</strong>: Undefined index: whoami&hellip;"</code></p>
 
-<p>Sure you can surpress notices with <code>error_reporting(E_ALL ^ E_NOTICE)</code>, but <code>get()</code> is a wiser choice because it allows you to define a default value in case the index doesn't exist.</p>
+<p>Sure you can suppress notices with <code>error_reporting(E_ALL ^ E_NOTICE)</code>, but <code>get()</code> is a wiser choice because it allows you to define a default value in case the index doesn't exist.</p>
 
 <pre class="brush:php">
 $template = array(
