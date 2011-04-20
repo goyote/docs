@@ -13,20 +13,31 @@ $text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
 $preview = Text::limit_words($text, 4);
 
 echo $preview; // "Lorem ipsum dolor sit…"
+
+echo Text::limit_words($text, 3); // "Lorem ipsum dolor…"
+echo Text::limit_words($text, 2); // "Lorem ipsum…"
+echo Text::limit_words($text, 1); // "Lorem…"
+echo Text::limit_words($text, 0); // "…"
 </pre>
 
 <p>By default the <a href="http://en.wikipedia.org/wiki/Ellipsis">ellipsis</a> (<code>&amp;hellip;</code>) character is appended to the end of the string, but you can override this setting by passing a third param.</p>
 
 <pre class="brush:php">
 $preview = Text::limit_words($text, 4, HTML::anchor("#", 'Read More'));
+ 
+$text = 'one two three four';
 
-// If the target string is not truncated, no $end_char is appended
-echo Text::limit_words('one two three four', 4); // "one two three four"
+// If the string is not truncated, no ending character will be appended
+echo Text::limit_words($text, 4); // "one two three four"
 
-// Don't append anything to the end of the resulting string
-echo Text::limit_words('one two three four', 3, ''); // "one two three"
+echo Text::limit_words($text, 3); // "one two three…"
 
-echo Text::limit_words('one two three four', 2, ' / three four'); // "one two / three four"
+// Take out the ellipsis
+echo Text::limit_words($text, 3, FALSE); // "one two three"
+
+// Append a custom arbitrary string
+echo Text::limit_words($text, 3, 'LOL'); // "one two threeLOL"
+echo Text::limit_words($text, 2, ' / three four'); // "one two / three four"
 </pre>
 
 <h2>limit_chars<code>($str, $limit = 100, $end_char = NULL, $preserve_words = FALSE)</code></h2>
