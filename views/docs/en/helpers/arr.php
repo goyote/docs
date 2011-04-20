@@ -355,7 +355,7 @@ $ids = Arr::pluck($employees, array('id', 'name')); // <- make it happen ;)
 
 <h2>unshift<code>( array & $array, $key, $val)</code></h2>
 
-<p><code>unshift()</code> is identical to the native PHP function <code><a href="http://php.net/manual/en/function.array-unshift.php">array_unshift()</a></code>, but for associative arrays.</p>
+<p><code>Arr::unshift()</code> is identical to <code><a href="http://php.net/manual/en/function.array-unshift.php">array_unshift()</a></code>, but for associative arrays.</p>
 
 <pre class="brush:php">
 $array = array(
