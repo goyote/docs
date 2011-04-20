@@ -379,7 +379,7 @@ array_shift($array);
 // Add a new item to the start
 Arr::unshift($array, 'first', 'first');
 
-// Result (bingo!)
+// Result
 Array
 (
     [first] => first
