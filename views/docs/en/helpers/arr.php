@@ -346,7 +346,7 @@ Array
 )
 </pre>
 
-<p><code>pluck()</code> would be more useful if it allowed you to retrieve several items instead of only one, as it currently does. e.g.:
+<p><code>pluck()</code> would be more useful if it allowed you to retrieve several items, instead of only one.
 
 <pre class="brush:php">
 // Get the name & id's of all the employees
