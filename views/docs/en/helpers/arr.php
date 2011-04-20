@@ -159,7 +159,7 @@ Array
 
 <h2>range<code>($step = 10, $max = 100)</code></h2>
 
-<p>The purpose of this method is unknown. As seen in the example below, <code>Arr::range()</code> behaves almost exactly like the native PHP function <code><a href="http://us2.php.net/manual/en/function.range.php">range()</a></code>:</p>
+<p>The purpose of this method is unknown. As seen in the example below, <code>Arr::range()</code> behaves almost exactly like the native function <code><a href="http://us2.php.net/manual/en/function.range.php">range()</a></code>:</p>
 
 <pre class="brush:php">
 Arr::range(8, 35);
