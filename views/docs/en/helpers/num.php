@@ -86,7 +86,7 @@ echo display(1200.10); // "Me debes 1.200,10 dólares"
 
 <h2>round<code>($value, $precision = 0, $mode = self::ROUND_HALF_UP, $native = true)</code></h2>
 
-<p>The purpose of <code>Num::round()</code> is to round floats up or down. If you have PHP 5.3, feel free to use the native method <code><a href="http://php.net/round">round</a></code> instead, it does the same thing.</p>
+<p>The purpose of <code>Num::round()</code> is to round floats up or down. If you have PHP 5.3, feel free to use the native method <code><a href="http://php.net/round">round()</a></code> instead, it does the same thing.</p>
 
 <pre class="brush:php">
 // By default, floats are rounded starting from 5 (ROUND_HALF_UP)
