@@ -39,6 +39,8 @@ return array(
 			'href' => '/start_here/welcome',
 			'links' => array(
 				'Welcome' => '/start_here/welcome',
+				'Installation' => '/start_here/installation',
+				'Troubleshooting' => '/start_here/troubleshooting',
 				'Coding Standards' => '/start_here/coding_standards',
 			),
 		),

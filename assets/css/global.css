@@ -88,3 +88,4 @@ a img { border: 0; }
 select { cursor: pointer; }
 #top-link { display: none; position: fixed; right: 5px; bottom: 5px; color: green; border: 1px solid #388000; background: #BDEE90; padding: 10px; }
 .disclaimer { color: #da0000; }
+.new { color: #ED9E03; }
