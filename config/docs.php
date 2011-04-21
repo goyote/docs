@@ -47,6 +47,7 @@ return array(
 			'links' => array(
 				'Arr' => '/helpers/arr',
 				'Cookie' => '/helpers/cookie',
+				'Feed' => '/helpers/feed',
 				'Num' => '/helpers/num',
 				'Text' => '/helpers/text',
 			),
@@ -82,6 +83,11 @@ return array(
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=sessions_and_cookies',
 				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/cookie',
 				'PHP.net Reference' => 'http://php.net/manual/en/function.setcookie.php',
+			),
+			'feed' => array(
+				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_atom_and_rss_feeds',
+				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/feed',
+				'API Browser' => 'http://kohanaframework.org/3.1/guide/api/Feed',
 			),
 			'text' => array(
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php#how_to_use_the_text_class',
