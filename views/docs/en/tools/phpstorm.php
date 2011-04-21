@@ -91,7 +91,7 @@
 
 <h2>Complete Current Statement</h2>
 
-<p><em>Complete current statement</em> allows you to terminate a statement no matter where you cursor position is. Most of the time you'll use it to add a semicolon at the end of the line.</p>
+<p><em>Complete current statement</em> allows you to terminate a statement no matter where you cursor position is. Most of the time you'll use it to add a semicolon to the end of the line.</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/complete_statement1.png" alt="Complete Statement 1"></p>
