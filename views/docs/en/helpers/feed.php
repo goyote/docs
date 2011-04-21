@@ -1,6 +1,6 @@
 <h1>Feed</h1>
 
-<p>Feed (short for "RSS feed") helps you generate a feed from a properly structured array, or it can transform an existing feed into a working PHP array. We'll take a look at both next.</p>
+<p>Feed (short for "RSS feed") helps you generate a feed from a properly structured array. It can also transform an existing feed into a working PHP array. We'll take a look at both next.</p>
 
 <h2>parse<code>($feed, $limit = 0)</code></h2>
 
