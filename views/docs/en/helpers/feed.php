@@ -1,10 +1,10 @@
 <h1>Feed</h1>
 
-<p>Feed (short for "RSS feed") helps you generate a feed from a properly structured array. It can also transform an existing feed into a working PHP array. We'll take a look at both next.</p>
+<p>Feed (short for "RSS feed") helps you generate a feed from a properly structured array, or it can transform an existing feed into a working PHP array. We'll take a look at both next.</p>
 
 <h2>parse<code>($feed, $limit = 0)</code></h2>
 
-<p><code>parse()</code> transforms a XML document - specifically RSS or Atom - into a PHP array. The first argument (<code>$feed</code>) can be any of the following:</p>
+<p><code>parse()</code> transforms a <abbr title="Extensible Markup Language">XML</abbr> document - specifically <abbr title="Really Simple Syndication">RSS</abbr> or Atom - into a PHP array. The first argument (<code>$feed</code>) can be any of the following:</p>
 
 <ol>
 <li><p>A raw string of XML code.</p>
@@ -114,5 +114,5 @@ $view->feed = $feed;
 &lt;/ul&gt;
 </pre>
 	</li>
-	
+
 <h2>create<code>($info, $items, $format = 'rss2', $encoding = 'UTF-8')</code></h2>
