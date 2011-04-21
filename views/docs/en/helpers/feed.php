@@ -78,7 +78,7 @@ Array
 	</li>
 
 	<li>
-		<p>An external feed, e.g. a feedburner URL.</p>
+		<p>An external feed, e.g. a FeedBurner URL.</p>
 
 <pre class="brush:php">
 if (($feed = Cache::instance()->get('feed')) === NULL)
