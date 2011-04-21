@@ -55,6 +55,7 @@ a img { border: 0; }
 #main p { margin: 0 0 20px; }
 #main ol, #main ul { padding: 0 0 0 30px; margin: 0 0 20px; }
 #top a:hover, #top a:focus,
+.updates a:hover, .updates a:focus,
 #main a:hover, #main a:focus { border-bottom: 1px solid; }
 
 #main .references { float: right; background: #EFEFEF; width: 200px;
