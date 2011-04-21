@@ -54,12 +54,27 @@
 							<?php endif ?>
 
 							<?php echo $content ?>
+
+							<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
 						</div>
 					</div>
 					<div id="sidebar">
 						<div class="box">
 							<h3><?php echo __('Table of Contents') ?></h3>
 							<div class="content" id="toc"></div>
+						</div>
+						<div class="box">
+							<h3>Recent Updates <a href="https://github.com/goyote/docs/commits/master.atom"><img src="/assets/images/rss.png" alt="RSS"></a></h3>
+							<div class="content">
+								<dl class="updates">
+									<?php foreach ($feed as $entry): ?>
+										<dd>
+											<span class="date">[<?php echo HTML::chars($entry['date']) ?>]</span>
+											<a href="<?php echo HTML::chars($entry['href']) ?>"><?php echo HTML::chars($entry['title']) ?></a>
+										</dd>
+									<?php endforeach ?>
+								</dl>
+							</div>
 						</div>
 					</div>
 				</div>
