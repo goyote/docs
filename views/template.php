@@ -66,14 +66,14 @@
 						<div class="box">
 							<h3>Recent Updates <a href="https://github.com/goyote/docs/commits/master.atom"><img src="/assets/images/rss.png" alt="RSS"></a></h3>
 							<div class="content">
-								<dl class="updates">
+								<ul class="updates">
 									<?php foreach ($feed as $entry): ?>
-										<dd>
+										<li>
 											<span class="date">[<?php echo HTML::chars($entry['date']) ?>]</span>
-											<a href="<?php echo HTML::chars($entry['href']) ?>"><?php echo HTML::chars($entry['title']) ?></a>
-										</dd>
+											<?php echo HTML::anchor(HTML::chars($entry['href']), HTML::chars($entry['title'])) ?>
+										</li>
 									<?php endforeach ?>
-								</dl>
+								</ul>
 							</div>
 						</div>
 					</div>
