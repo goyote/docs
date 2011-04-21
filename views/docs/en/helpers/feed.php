@@ -39,8 +39,9 @@ $rss = &lt;&lt;&lt;RSS
 &lt;/rss&gt;
 RSS;
 
-Feed::parse($rss);
+$feed = Feed::parse($rss);
 
+// $feed
 Array
 (
     [0] => Array
