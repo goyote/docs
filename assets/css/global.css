@@ -20,9 +20,9 @@ a img { border: 0; }
 #nav li ul { list-style: none; padding: 10px 0 10px; position: absolute; left: -999em; width: 200px; background: #2774C6;
 	-moz-border-radius: 0 3px 3px 3px; -webkit-border-radius: 0 3px 3px 3px; border-radius: 0 3px 3px 3px; }
 #nav li:hover ul { left: auto; }
-#nav > li:hover > a { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; }
+#nav > li:hover > a { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; padding-bottom: 9px; }
 #nav > li:first-child:hover > a { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
-#nav > li:first-child:hover > a { padding-bottom: 9px !important; }
+#nav > li:first-child:hover > a { padding-bottom: 6px; }
 #nav li:hover > a { background: #2774C6; color: #fff; }
 #nav ul li {  }
 #nav ul a { color: #fff; border-bottom: 1px solid #1658A9; }
