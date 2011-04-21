@@ -22,13 +22,14 @@ a img { border: 0; }
 #nav li:hover ul { left: auto; }
 #nav > li:hover > a { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; }
 #nav > li:first-child:hover > a { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+#nav > li:first-child:hover > a { padding-bottom: 9px !important; }
 #nav li:hover > a { background: #2774C6; color: #fff; }
 #nav ul li {  }
 #nav ul a { color: #fff; border-bottom: 1px solid #1658A9; }
 #nav ul li:last-child a { border-bottom: 0; }
 #nav ul a:hover,
 #nav ul a:focus { background: #00A6FF; }
-#nav a:active { background-color: red !important; }
+#nav a:active { background-color: #ff0 !important; color: #000 !important; }
 
 #top { clear: both; margin: 0 0 4px; }
 #top .crumbs { padding: 0 0 0 20px; }
@@ -62,7 +63,7 @@ a img { border: 0; }
 #main .references dd a { display: block; padding: 5px 10px; }
 #main .references dd a:hover,
 #main .references dd a:focus { border: 0; background: #E6E6E6; }
-#main .references dd a:active { background: red; color: #fff; }
+#main .references dd a:active { background: #ff0; color: #000; }
 #main .image { background: #eee; text-align: center; padding: 15px 0; border: 1px solid #ccc; margin: 0 0 20px; }
 #main .image img { max-width: 600px; border: 1px solid #ddd;}
 #main .image p { margin: 10px 0 0; font-size: 12px; }
@@ -72,10 +73,12 @@ a img { border: 0; }
 #sidebar .box h3 { background: #4096B3; color: #fff; font-size: 16px; line-height: 17px; padding: 14px 0 8px 17px; font-weight: normal; }
 #sidebar .box .content { background: #DEEDFF; border: 7px solid #61A7BE; padding: 10px 0; }
 #sidebar .box .content ul { list-style: none; }
-#sidebar .box .content ul a { font: 16px/17px 'Courier New', monospace; display: block; padding: 3px 0 3px 7px; margin: 0 7px 0 7px; }
-#sidebar .box .content ul a:hover,
-#sidebar .box .content ul a:focus { background: #00A6FF; color: #fff; }
-#sidebar .box .content ul a:active { background: red; }
+#sidebar .box #toc ul a { font: 16px/17px 'Courier New', monospace; display: block; padding: 3px 0 3px 7px; margin: 0 7px 0 7px; }
+#sidebar .box #toc ul a:hover,
+#sidebar .box #toc ul a:focus { background: #00A6FF; color: #fff; }
+#sidebar .box #toc ul a:active { background: #ff0; color: #000; }
+#sidebar .updates { padding: 0 10px 0 14px; font-size: 11px; }
+#sidebar .updates .date { font-size: 10px; }
 
 .clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 .error, .caution { color: #9e0b0f; }
