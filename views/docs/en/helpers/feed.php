@@ -4,7 +4,7 @@
 
 <h2>parse<code>($feed, $limit = 0)</code></h2>
 
-<p><code>parse()</code> transforms a <abbr title="Extensible Markup Language">XML</abbr> document - specifically <abbr title="Really Simple Syndication">RSS</abbr> or Atom - into a PHP array. The first argument (<code>$feed</code>) can be any of the following:</p>
+<p><code>parse()</code> will transform a <abbr title="Extensible Markup Language">XML</abbr> document - specifically <abbr title="Really Simple Syndication">RSS</abbr> or Atom - into a PHP array. The first argument (<code>$feed</code>) can be any of the following:</p>
 
 <ol>
 <li><p>A raw string of XML code.</p>
