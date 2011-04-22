@@ -89,3 +89,5 @@ select { cursor: pointer; }
 #top-link { display: none; position: fixed; right: 5px; bottom: 5px; color: green; border: 1px solid #388000; background: #BDEE90; padding: 10px; }
 .disclaimer { color: #da0000; }
 .new { color: #ED9E03; }
+.note { background: #E8F3FF; padding: 15px; margin: 0 0 20px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+.note p:last-child { margin: 0 !important; }
