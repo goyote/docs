@@ -7,7 +7,7 @@
 <p><strong>News:</strong></p>
 
 <ul>
-	<li><strong class="new">New</strong> <a href="/<?php echo I18n::$lang ?>/helpers/feed">feed</a> article added!</li>
+	<li><a href="/<?php echo I18n::$lang ?>/helpers/feed">Feed</a> guide almost complete. Just need a RSS & Atom view example.</li>
 	<li>Added the <a href="/<?php echo I18n::$lang ?>/start_here/installation">installation</a> and <a href="/<?php echo I18n::$lang ?>/start_here/troubleshooting">troubleshooting</a> guides from the old website (I'll rewrite them eventually.)</li>
 </ul>
 
