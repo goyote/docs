@@ -48,9 +48,7 @@ find www
 </pre>
 
 <div class="note">
-	<div>
-		<p><strong>Note:</strong> On windows, the <code>/www</code> directory would be the equivalent to <code>C:\www</code>.</p>
-	</div>
+	<p><strong>Note:</strong> On windows, the <code>/www</code> directory would be the equivalent to <code>C:\www</code>.</p>
 </div>
 </li>
 <li>
@@ -103,11 +101,9 @@ $system = '../../kohana/3.0.9/system';
 127.0.0.1 website1 www.website1
 </pre>
 
-	<div class="note">
-		<div>
-			<p><strong>Note:</strong> If you're on a mac or linux your <code>hosts</code> file is located here: <code>/etc/hosts</code>. If you're on a windows machine, you can locate the hosts file here: <code>C:\Windows\System32\drivers\etc\hosts</code>.</p>
-		</div>
-	</div>
+<div class="note">
+	<p><strong>Note:</strong> If you're on a mac or linux your <code>hosts</code> file is located here: <code>/etc/hosts</code>. If you're on a windows machine, you can locate the hosts file here: <code>C:\Windows\System32\drivers\etc\hosts</code>.</p>
+</div>
 </li>
 
 <li>
@@ -148,9 +144,7 @@ sudo -s
 </pre>
 
 <div class="note">
-	<div>
-		<p><strong>Note:</strong> If you're using XAMPP, you can add a vhost in: <code>C:\xampp\apache\conf\extra\httpd-vhosts.conf</code></p>
-	</div>
+	<p><strong>Note:</strong> If you're using XAMPP, you can add a vhost in: <code>C:\xampp\apache\conf\extra\httpd-vhosts.conf</code></p>
 </div>
 </li>
 
