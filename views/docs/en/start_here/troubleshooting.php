@@ -14,9 +14,9 @@
 <li>
 <p><strong>Directory APPPATH/cache must be writable</strong>. <strong>Directory APPPATH/logs must be writable</strong></p>
 
-<p>In short: these directories are not writable by Apache. Due to file permissions, Apache is not allowed to create or write to any of the files stored inside these directories.</p>
+<p>In short: these directories are not writable by Apache. Apache is not allowed to create or write to any of the files stored inside these directories, due to file permissions.</p>
 
-<p>To fix the problem, you need to change the file permissions on these dirs. Start off by running a <code>ls -la</code> inside the <code>application</code> directory within the terminal app.</p>
+<p>To fix the problem, you need to change the file permissions on these dirs. Start by running a <code>ls -la</code> inside the <code>application</code> directory within the terminal app.</p>
 
 <pre class="brush:bash">
 ls -la application/
