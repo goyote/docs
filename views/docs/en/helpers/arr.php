@@ -55,7 +55,7 @@ class Arr extends Kohana_Arr {
 		return is_array($array) AND parent::is_assoc($array);
 	}
 
-} // End Arr
+} // Arr
 </pre>
 
 <p>Don't be afraid to extend Kohana. The <abbr title="Cascading Filesystem">CFS</abbr> was built to enable this type of workflow. Sadly in this case, an <code>ErrorException</code> is thrown because we've modified the function signature in an incompatible way, i.e. removed the array requirement.</p>
