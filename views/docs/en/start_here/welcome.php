@@ -7,7 +7,7 @@
 <p><strong>News:</strong></p>
 
 <ul>
-	<li><a href="/<?php echo I18n::$lang ?>/helpers/feed">Feed</a> guide almost complete. Just need a RSS & Atom view example.</li>
+	<li>The <a href="/<?php echo I18n::$lang ?>/helpers/feed">feed</a> guide is almost complete. Just need a RSS & Atom view example.</li>
 	<li>Added the <a href="/<?php echo I18n::$lang ?>/start_here/installation">installation</a> and <a href="/<?php echo I18n::$lang ?>/start_here/troubleshooting">troubleshooting</a> guides from the old website. Basic cleanup has ended; I rather focus my energy on the upcoming "complete and total noob" guide, as well as the module <strong>guides</strong> in the works (notice how I'm not using the word "documentation" anymore ;) It might be enough to keep a few people off my back, jk smile :) have a beer.)</li>
 </ul>
 
