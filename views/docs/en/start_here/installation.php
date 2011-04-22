@@ -1,10 +1,10 @@
-<h2>How to install Kohana</h2>
+<h1>Installation</h1>
 
-<p>There are two ways to install ko. You can install ko through the command-line using git, or you can install ko manually using the good ol' mouse. Here we'll cover both.</p>
+<p>There are two ways to install Kohana. You can install ko through the command-line using git, or you can install ko manually using the good ol' mouse. We'll cover both next.</p>
 
 <div class="section">
 
-<h3>Installing ko manually</h3>
+<h2>Manual Installation</h2>
 
 <p>If you like watching videos, I've prepared a <a href="http://youtu.be/7p17AM0J-dk?hd=1" target="_blank">video-tut</a> on youtube that should guide you through the whole installation process. However, if you don't like watching videos, then please follow these steps:</p>
 
@@ -179,7 +179,7 @@ LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so
 
 <div class="section">
 
-<h3>Installing through the command line</h3>
+<h2>Command-line Installation</h2>
 
 <p>The Kohana project is hosted on GitHub, which means you can do a lot of cool stuff, like fork the project, submit patches or clone the ko repo into your personal projects and keep it up to date with ease.</p>
 

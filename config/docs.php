@@ -72,6 +72,11 @@ return array(
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php',
 				'KO2 Docs' => 'http://docs.kohanaphp.com/contents',
 			),
+			'installation' => array(
+				'Official Documentation' => 'http://kohanaframework.org/3.1/guide/kohana/install',
+				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php#installing_and_configuring_kohana_3',
+				'KO2 Docs' => 'http://docs.kohanaphp.com/installation',
+			),
 		),
 		'helpers' => array(
 			'arr' => array(

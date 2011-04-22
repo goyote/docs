@@ -1,4 +1,4 @@
-<h2><a href="#kohana-troubleshooting" id="kohana-troubleshooting">Kohana troubleshooting</a></h2>
+<h1>Troubleshooting</h1>
 
 <p>Yep, it happens.</p>
 
@@ -6,7 +6,7 @@
 
 <div class="section">
 
-<h3><s>teh checklist</s> FAQ</h3>
+<h2><s>teh checklist</s> FAQ</h2>
 
 <p><s>For lack of a better idea,</s> I'm gonna write this tutorial as a <s>checklist</s> question/answer list:</p>
 
