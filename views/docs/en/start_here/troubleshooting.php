@@ -77,9 +77,7 @@ Kohana::init(array(
 </pre>
 
 	<div class="note">
-		<div>
-			<p><strong>Straight from the source:</strong> base_url &mdash; The base URL for your application. This should be the *relative* path from your DOCROOT to your `index.php` file, in other words, if Kohana is in a subfolder, set this to the subfolder name, otherwise leave it as the default.  **The leading slash is required**, trailing slash is optional.</p>
-		</div>
+		<p><strong>Straight from the source:</strong> base_url &mdash; The base URL for your application. This should be the *relative* path from your DOCROOT to your `index.php` file, in other words, if Kohana is in a subfolder, set this to the subfolder name, otherwise leave it as the default.  **The leading slash is required**, trailing slash is optional.</p>
 	</div>
 </li>
 
