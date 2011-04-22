@@ -162,3 +162,5 @@ class Controller_RSS extends Controller {
 <p>The RSS view <code>views/feed/rss.php</code>:</p>
 
 <p>The Atom view <code>views/feed/atom.php</code>:</p>
+
+<p>Once you're done, I recommend you burn your feeds with <a href="http://www.feedburner.com">FeedBurner</a>. FeedBurner allows you to track how many people subscribe to your feed, offer update notifications through email, analytics, and much more. Plus, it's free.</p>
