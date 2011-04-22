@@ -79,7 +79,7 @@
 
 <h2>Code Completion</h2>
 
-<p>Autocompletion is what distinguishes a mere text editor from its daddy the IDE. Autompletion is great for those long, hard to remember method names. Some IDEs like PhpED only automplete method names. PhpStorm on the other hand, autocompletes EVERYTHING. Variables, constants, classes, keywords, you name it. Not only that, but it also has the same support for other languages too, like HTML, JavaScript and CSS.</p>
+<p>Autocompletion is what distinguishes a mere text editor from its daddy the IDE. Autompletion is great for those long, hard to remember method names. Some IDEs like PhpED only automplete method names. PhpStorm on the other hand, autocompletes EVERYTHING. Variables, constants, classes, keywords, you name it. Not only that; it also has the same support for other languages too, like HTML, JavaScript and CSS.</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/code_completion1.png" alt="Code Completion 1"></p>
