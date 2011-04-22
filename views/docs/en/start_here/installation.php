@@ -6,7 +6,7 @@
 
 <h2>Manual Installation</h2>
 
-<p>If you like watching videos, I've prepared a <a href="http://youtu.be/7p17AM0J-dk?hd=1" target="_blank">video-tut</a> on youtube that should guide you through the whole installation process. However, if you don't like watching videos, then please follow these steps:</p>
+<p>If you like watching videos, I've prepared a <a href="http://youtu.be/7p17AM0J-dk?hd=1" target="_blank">video-tut</a> on youtube that should guide you through the whole installation process. However, if you don't like watching videos, then follow these steps:</p>
 
 <ol>
 <li>
@@ -36,12 +36,15 @@
 	modules/
 </pre>
 
-<p>If you like using the terminal, you can achieve the previous structure by typing in the following commands:</p>
+<p>If you like using the terminal, you can achieve the previous structure by typing the following commands:</p>
 
 <pre class="brush: bash">
 cd /
 mkdir -p www/{website1/{application,htdocs,logs},kohana/{3.0.9,3.1},modules}
 tree www
+
+# Or
+find www
 </pre>
 
 <div class="note">
@@ -163,7 +166,7 @@ LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so
 <li><p>Open your favorite browser, and hit the URL: <code>http://website1</code>.</p></li>
 
 <li>
-	<p>You'll arrive at the checkup page. Make sure you have all green lights. If you hit an error, proceed to the <a href="/start-here/troubleshooting/">troubleshooting page</a>.</p>
+	<p>You'll arrive at the checkup page. Make sure you have all green lights. If you hit an error, proceed to the <a href="/<?php echo I18n::$lang ?>/start_here/troubleshooting">troubleshooting page</a>.</p>
 </li>
 
 <li>
@@ -173,7 +176,7 @@ LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so
 <li><p>Rejoyce.</p></li>
 </ol>
 
-<p>Did you encounter an error? No worries, I've prepared a <a href="/start-here/troubleshooting/">troubleshooting page</a>!</p>
+<p>Did you encounter an error? No worries, I've prepared a <a href="/<?php echo I18n::$lang ?>/start_here/troubleshooting">troubleshooting page</a>!</p>
 
 </div>
 
