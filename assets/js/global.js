@@ -36,4 +36,11 @@ $(function() {
 		e.preventDefault();
 		$.scrollTo(0,300);
 	});
+
+	$('.syntaxhighlighter').live('mouseenter', function() {
+		$(this).css('overflow', 'visible');
+	})
+	.live('mouseleave', function() {
+		$(this).css('overflow', 'auto');
+	});
 });
