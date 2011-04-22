@@ -119,9 +119,9 @@ $view->feed = $feed;
 	
 <h2>create<code>($info, $items, $format = 'rss2', $encoding = 'UTF-8')</code></h2>
 
-<p><code>create()</code> is too cumbersome for my taste. I would much rather treat the XML as I currently treat HTML, and place the RSS code in a view. Maintenance just seems easier. Plus, you would then have the option to build an atom feed, as <code>create()</code> only supports RSS 2.0.</p>
+<p>Honestly, <code>create()</code> seems too cumbersome for my taste. I would much rather treat the XML as I currently treat HTML, and place the RSS code in a view. Maintenance just seems easier that way. Plus, you would then have the option to build an atom feed, as currently <code>create()</code> only supports RSS 2.0.</p>
 
-<p>There are many ways to tackle this problem, and it all depends on your needs. I'm going to go with the simplest route, and assume you want a static rss feed served on <code>example.com/rss</code>.</p>
+<p>There are many ways to tackle this problem, and it all depends on your needs. I'm going to go with the simplest route, and assume that you want a static RSS feed served from the URL: <code>example.com/rss</code>.</p>
 
 <pre class="brush:php">
 class Controller_RSS extends Controller {
