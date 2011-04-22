@@ -46,7 +46,7 @@ chmod 0700 logs/ cache/
 </li>
 <li>
 <p><strong>How do I remove "index.php" from the URL?</strong></p>
-	<p>Rename <code>example.htacess</code> to <code>.htaccess</code>, then keep reading this tutorial (or, read the <a href="http://kohanaframework.org/guide/kohana/tutorials/clean-urls" target="_blank">official documentation!</a> ;))</p>
+	<p>Rename <code>example.htacess</code> to <code>.htaccess</code>, then keep reading this tutorial (or, read the <a href="http://kohanaframework.org/3.1/guide/kohana/tutorials/clean-urls" target="_blank">official documentation!</a> ;))</p>
 </li>
 
 <li>
