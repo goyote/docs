@@ -68,7 +68,7 @@
 
 <h2>Refactor</h2>
 
-<p>Another must-have feature that's missing in mate is the ability to rename a variable safely on the fly. To do so in PhpStorm, simply place the cursor on top of the word, press <code>Shift+F6</code> and rename!</p>
+<p>Another must-have feature that's missing in mate is the ability to rename a variable safely on the fly. To do so in PhpStorm, simply place the cursor on top of the word, and press <code>Shift+F6</code> to rename!</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/refactor1.png" alt="Refactor 1"></p>
