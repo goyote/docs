@@ -1,11 +1,11 @@
 <h1>Feed</h1>
 
-<p>Feed (short for "RSS feed") helps you generate a feed from a properly structured array. It can also transform an existing feed into a working PHP array. We'll take a look at both next.</p>
+<p>Feed (short for "RSS feed") is a handy tool that helps you transform an existing feed into a working PHP array.</p>
 
 <h2>parse<code>($feed, $limit = 0)</code></h2>
 
-<p><code>parse()</code> transforms a <abbr title="Extensible Markup Language">XML</abbr> document - specifically <abbr title="Really Simple Syndication">RSS</abbr> or Atom - into a PHP array. The first argument (<code>$feed</code>) can be any of the following:</p>
-
+<p><code>parse()</code> will transform a <abbr title="Extensible Markup Language">XML</abbr> document - specifically <abbr title="Really Simple Syndication">RSS</abbr> or Atom - into a PHP array. The first argument (<code>$feed</code>) can be any of the following:</p>
+		
 <ol>
 <li><p>A raw string of XML code.</p>
 
@@ -115,5 +115,50 @@ $view->feed = $feed;
 &lt;/ul&gt;
 </pre>
 	</li>
-
+</ol>
+	
 <h2>create<code>($info, $items, $format = 'rss2', $encoding = 'UTF-8')</code></h2>
+
+<p><code>create()</code> is too cumbersome for my taste. I would much rather treat the XML as I currently treat HTML, and place the RSS code in a view. Maintenance just seems easier. Plus, you would then have the option to build an atom feed, as <code>create()</code> only supports RSS 2.0.</p>
+
+<p>There are many ways to tackle this problem, and it all depends on your needs. I'm going to go with the simplest route, and assume you want a static rss feed served on <code>example.com/rss</code>.</p>
+
+<pre class="brush:php">
+class Controller_RSS extends Controller {
+
+	public function action_index()
+	{
+		// Get the data from its natural source
+		$data = ...
+
+		// Kohana Jobs example
+		$data = ORM::factory('job')->order_by('created', 'DESC')->find_all();
+
+		$this->_create_feed($data);
+	}
+
+	/**
+	 * Creates a RSS or Atom feed based on the source data.
+	 *
+	 * @param  array
+	 */
+	protected function _create_feed(array $data)
+	{
+		$format = strtolower(Arr::get($_GET, 'format', 'rss'));
+
+		// RSS needs xml mime type for autodiscovery
+		$mime = File::mime_by_ext(($format === 'rss') ? 'xml' : $format);
+		$this->response->headers('content-type', $mime.'; charset='.Kohana::$charset);
+
+		// Will throw error if format is not RSS or Atom
+		$view = new View('rss/'.$format, array('data' => $data));
+	
+		$this->response->body($view->render());
+	}
+
+} // Controller_RSS
+</pre>
+
+<p>The RSS view <code>views/feed/rss.php</code>:</p>
+
+<p>The Atom view <code>views/feed/atom.php</code>:</p>
