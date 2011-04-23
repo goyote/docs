@@ -104,3 +104,17 @@
 
 <p>Say you have your cursor on a statement, and you want to start writing on the next line. Normally you would press <code>End</code>, <code>Enter</code>. In PhpStorm if the current statement is already complete and you press <code>Ctrl+Shift+Enter</code>, the editor will start a new line for you and place your cursor at the start of it. This functionality is equivalent to pressing <code>o</code> in vim.</p>
 
+<h2>Convert Indents to Tabs</h2>
+
+<p>As said earlier, you should use tabs instead of spaces. The easiest way to comply with this rule is to have PhpStorm automatically handle this for you. In the <code>Code Style > General</code> settings enable the usage of the tab character by clicking on the "Use tab character" option.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/use_tab_character.png" alt="Use Tab Character"></p>
+</div>
+
+<p>Sometimes those pesky spaces can creep into a project, e.g. when copy-pasting a code from the web. In such a case, simply <code>Ctrl+A</code> + <code>Edit > Convert Indents to Tabs</code>. Done.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/convert_indents_to_tabs.png" alt="Convert Indents to Tabs"></p>
+</div>
+

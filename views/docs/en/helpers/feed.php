@@ -151,7 +151,7 @@ class Controller_RSS extends Controller {
 		$this->response->headers('content-type', $mime.'; charset='.Kohana::$charset);
 
 		// Will throw error if format is not RSS or Atom
-		$view = new View('rss/'.$format, array('data' => $data));
+		$view = new View('feed/'.$format, array('data' => $data));
 	
 		$this->response->body($view->render());
 	}
