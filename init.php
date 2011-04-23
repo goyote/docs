@@ -5,7 +5,7 @@ set_exception_handler(array('Exception_Handler', 'handle'));
 
 Route::set('docs', '(<lang>(/<category>(/<article>)))',
 	array(
-		'lang' => '[-a-z_]{2,5}',
+		'lang' => '\w{2}',
 		'category' => '\w+',
 		'article' => '\w+',
 	))
