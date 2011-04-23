@@ -21,6 +21,10 @@ $(function() {
 		html: li.join(' ')
 	}).appendTo('#toc');
 
+	if (location.hash) {
+		location = location.hash;
+	}
+
 	$('#language').bind('change', function() {
 		var href= $(this).val();
 		window.location.href = href;
