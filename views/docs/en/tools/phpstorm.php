@@ -1,12 +1,12 @@
 <h1>PhpStorm</h1>
 
-<p>PhpStorm is my IDE of choice. PhpStorm has more features than its competition, and is constantly being fixed and enhanced thanks to the <a href="http://youtrack.jetbrains.net/issues/WI">close interaction between users and the Java devs</a> behind the software. Having said that, PhpStorm is not perfect. PhpStorm has a lot of problems, and other IDEs do many things better. For instance, for FTP support I still fall back to using Dreamweaver 8, just because it's that good. For PHP debugging, nothing beats DBG + PhpEd, it's rock solid and works like a charm. NetBeans has better autocompletion, i.e. it does autocomplete Kohana's empty static classes, PhpStorm does not. And the list goes on. Despite all these shortcomings, I still find myself booting up PhpStorm every time I turn my computer on. The reason being, PhpStorm has great customer support. I've opened several tickets on YouTrack in the past, and most of them have been addressed. I think it's the constant software improvement that keeps me engaged (proof of that is <a href="http://blogs.jetbrains.com/webide/">their blog</a>.)</p>
+<p>PhpStorm is my IDE of choice. PhpStorm has more features than its competition, and is constantly being fixed and enhanced thanks to the <a href="http://youtrack.jetbrains.net/issues/WI">close interaction between users and the Java devs</a> behind the software. Having said that, PhpStorm is not perfect. PhpStorm has a lot of problems, and other IDEs do many things better. For instance, for FTP support I still fall back to using Dreamweaver 8, just because it's that good. For PHP debugging, nothing beats DBG + PhpED, it's rock solid and works like a charm. NetBeans has better autocompletion, i.e. it does autocomplete Kohana's empty static classes, PhpStorm does not. And the list goes on. Despite all these shortcomings, I still find myself booting up PhpStorm every time I turn my computer on. The reason being, PhpStorm has great customer support. I've opened several tickets on YouTrack in the past, and most of them have been addressed. I think it's the constant software improvement that keeps me engaged (proof of that is <a href="http://blogs.jetbrains.com/webide/">their blog</a>.)</p>
 
 <p>The following is a list of tips for improving your coding efficiency when using PhpStorm to create ko apps. I'll also be highlighting some of my favorite features, just to make sure you're at least aware of their existence, and try them out when ever you can.</p>
 
 <h2>Go to File</h2>
 
-<p>TextMate is famous for its useful "Go to File" dialog box, which makes it a breeze to open any file in your project no matter where it's located. You simply type the name of the file that you want to open, and the editor finds it for you. This is a must have feature for any serious IDE, even though some of them don't support it, e.g. PhpEd. PhpStorm takes it to another level by letting you search for a class name, file and symbol. File search is <a href="http://www.jetbrains.com/phpstorm/demos/find_files_like_a_pro/find_files_like_a_pro.html">better explained in this video</a>.</p>
+<p>TextMate is famous for its useful "Go to File" dialog box, which makes it a breeze to open any file in your project no matter where it's located. You simply type the name of the file that you want to open, and the editor finds it for you. This is a must have feature for any serious IDE, even though some of them don't support it, e.g. PhpED. PhpStorm takes it to another level by letting you search for a class name, file and symbol. File search is <a href="http://www.jetbrains.com/phpstorm/demos/find_files_like_a_pro/find_files_like_a_pro.html">better explained in this video</a>.</p>
 
 <p>To open a file within any project, press <code>Ctrl+Shift+N</code>.</p>
 
@@ -68,7 +68,7 @@
 
 <h2>Refactor</h2>
 
-<p>Another must-have feature that's missing in mate is the ability to rename a variable safely on the fly. To do so in PhpStorm, simply place the cursor on top of the word, press <code>Shift+F6</code> and rename!</p>
+<p>Another must-have feature that's missing in mate is the ability to rename a variable safely on the fly. To do so in PhpStorm, simply place the cursor on top of the word, and press <code>Shift+F6</code> to rename!</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/refactor1.png" alt="Refactor 1"></p>
@@ -79,7 +79,7 @@
 
 <h2>Code Completion</h2>
 
-<p>Autocompletion is what distinguishes a mere text editor from an its daddy the IDE. Autompletion is great for those long, hard to remember method names. Some IDEs like PhpEd only automplete methods. PhpStorm on the other hand, autocompletes EVERYTHING. Variables, constants, classes, keywords, you name it. Not only that, it also has the same support for other languages like HTML, JavaScript and CSS.</p>
+<p>Autocompletion is what distinguishes a mere text editor from its daddy the IDE. Autompletion is great for those long, hard to remember method names. Some IDEs like PhpED only automplete method names. PhpStorm on the other hand, autocompletes EVERYTHING. Variables, constants, classes, keywords, you name it. Not only that; it also has the same support for other languages too, like HTML, JavaScript and CSS.</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/code_completion1.png" alt="Code Completion 1"></p>
@@ -91,7 +91,7 @@
 
 <h2>Complete Current Statement</h2>
 
-<p><em>Complete current statement</em> allows you to terminate a statement no matter where you cursor position is. Most of the time you'll use it to add a semicolon to the end of the line.</p>
+<p><em>Complete current statement</em> allows you to terminate a statement no matter where your cursor position is. Most of the time you'll use it to add a semicolon to the end of the line.</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/complete_statement1.png" alt="Complete Statement 1"></p>
