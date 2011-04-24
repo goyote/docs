@@ -44,6 +44,12 @@ return array(
 				'Coding Standards' => '/start_here/coding_standards',
 			),
 		),
+		'Modules' => array(
+			'href' => '/modules/kostache',
+			'links' => array(
+				'Kostache' => '/modules/kostache',
+			),
+		),
 		'Helpers' => array(
 			'href' => '/helpers/arr',
 			'links' => array(
