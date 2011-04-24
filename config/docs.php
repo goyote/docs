@@ -20,11 +20,11 @@ return array(
 				'name' => 'English',
 				'locale' => 'en_US.utf-8',
 			),
-			'es' => array(
-				'lang' => 'es',
-				'name' => 'Español',
-				'locale' => 'es_MX.utf-8',
-			),
+//			'es' => array(
+//				'lang' => 'es',
+//				'name' => 'Español',
+//				'locale' => 'es_MX.utf-8',
+//			),
 		),
 	),
 

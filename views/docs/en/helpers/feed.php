@@ -131,9 +131,6 @@ class Controller_RSS extends Controller {
 		// Get the data from its natural source
 		$data = ...
 
-		// Kohana Jobs example
-		$data = ORM::factory('job')->order_by('created', 'DESC')->find_all();
-
 		$this->_create_feed($data);
 	}
 
@@ -161,6 +158,41 @@ class Controller_RSS extends Controller {
 
 <p>The RSS view <code>views/feed/rss.php</code>:</p>
 
-<p>The Atom view <code>views/feed/atom.php</code>:</p>
+<pre class="brush:php">
+&lt;?php echo '&lt;?xml version="1.0" encoding="'.Kohana::$charset.'"?'.'&gt;'; ?&gt;
+
+&lt;rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+&gt;
+
+&lt;channel&gt;
+	&lt;title&gt;RSS Example&lt;/title&gt;
+	&lt;description&gt;This is an example of an RSS feed&lt;/description&gt;
+	&lt;link&gt;&lt;?php echo rtrim(URL::site(NULL, TRUE), '/') ?&gt;&lt;/link&gt;
+	&lt;language&gt;&lt;?php echo I18n::$lang ?&gt;&lt;/language&gt;
+	&lt;?php foreach ($data as $item): ?&gt;
+		&lt;item&gt;
+			&lt;title&gt;&lt;?php echo $item['title'] ?&gt;&lt;/title&gt;
+			&lt;description&gt;
+				&lt;![CDATA[
+					&lt;?php echo $item['description'] ?&gt;
+				]]&gt;
+			&lt;/description&gt;
+			&lt;link&gt;&lt;/link&gt;
+			&lt;guid&gt;&lt;/guid&gt;
+			&lt;pubDate&gt;&lt;?php echo date(DATE_RSS, $item['created']) ?&gt;&lt;/pubDate&gt;
+		&lt;/item&gt;
+	&lt;?php foreach ?&gt;
+&lt;/channel&gt;
+
+&lt;/rss&gt;
+</pre>
+
+<!--<p>The Atom view <code>views/feed/atom.php</code>:</p>-->
 
 <p>Once you're done, I recommend you burn your feeds with <a href="http://www.feedburner.com">FeedBurner</a>. FeedBurner allows you to track how many people subscribe to your feed, offer update notifications through email, analytics, and much more. Plus, it's free.</p>
