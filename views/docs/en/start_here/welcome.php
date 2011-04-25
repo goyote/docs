@@ -4,8 +4,12 @@
 
 <p>Now, on to business. kowut is a warm place where the editor likes to spend his time talking about <a href="http://kohanaframework.org">Kohana</a>. If you find anything useful great, if not that's ok. Done, the intro is over. Go have fun.</p>
 
-<!--<p><strong>News:</strong></p>-->
+<p><strong>News:</strong></p>
 
+<ul>
+	<li><a href="/<?php echo I18n::$lang ?>/modules/kostache">Kostache</a> guide started! Expect typo fixes, wording changes, and further examples in the days to come!</li>
+</ul>
+	
 <p class="disclaimer"><strong>Disclaimer:</strong></p>
 
 <ul class="disclaimer">
