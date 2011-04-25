@@ -28,19 +28,6 @@ if ($total === $noob) {
 
 <h2>Class Curlies</h2>
 
-<div class="note">
-	<p><strong>Update:</strong> This goes against how Kohana is currently written, but for my next project I'll experiment being consistent with the curly placement, as well as deleting the ending class comment, just to see if I like it.</p>
-<pre class="brush:php">
-class ClassName
-{
-	public function method()
-	{
-
-	}
-}
-</pre>
-</div>
-
 <p>The opening class curly goes on the same line!</p>
 	
 <pre class="brush:php">
