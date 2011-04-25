@@ -84,6 +84,11 @@ return array(
 				'KO2 Docs' => 'http://docs.kohanaphp.com/installation',
 			),
 		),
+		'modules' => array(
+			'kostache' => array(
+				'GitHub Repo' => 'https://github.com/zombor/kostache',
+			),
+		),
 		'helpers' => array(
 			'arr' => array(
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_arrays_in_kohana',
