@@ -60,9 +60,9 @@ Kohana::modules(array(
 
 <p>I know you're dying for a juicy hello world tutorial; you love those don't you ;) Buckle up, here goes.</p>
 
-<p>So far with views, you've been using the handy dandy template controller. Sadly, Kostache doesn't provide one for you; doesn't matter, we'll create one ourselves! You can either create a layout controller, or in my case, simply hijack the controller class. If later you need to extend the normal controller class, you could do so by extending <code>Kohana_Controller</code>.</p>
+<p>So far with views, you've been using the handy dandy template controller. Sadly, Kostache doesn't provide one for you; doesn't matter, we'll create one ourselves! You can either create a layout controller, or in my case, simply hijack the controller class. If later down the road you find the need to extend the normal controller class, you may do so by extending <code>Kohana_Controller</code>.</p>
 
-<p>application/classes/controller.php <small>Inspired by <a href="https://github.com/vendo/core/blob/develop/classes/controller.php">Vendo</a>.</small></p>
+<p>application/classes/controller.php <small>Based on <a href="https://github.com/vendo/core/blob/develop/classes/controller.php">Vendo</a>.</small></p>
 
 <pre class="brush:php">
 &lt;?php defined('SYSPATH') or die('No direct script access.');
@@ -150,7 +150,7 @@ class Controller_Welcome extends Controller {
 
 <h3>View Class</h3>
 
-<p>Every page has a corresponding view class that passes data to it. e.g. to add a testimonials, and client list page to your about us section, you would create the following files:</p>
+<p>Every page has a corresponding view class that passes data to it. e.g. to add a testimonials, and client list page to your about us section, you would need to create the following files:</p>
 
 <pre class="brush:php">
 // Controller
@@ -197,7 +197,8 @@ application/templates/welcome/index.mustache
 e.g.
 Hello world!
 
-// Will be rendered - as a partial - with the default name of "content," inside the layout template
+// Will be rendered as a partial (the partial having the default name
+// of "content") inside the layout template
 application/templates/layout.mustache
 e.g.
 &lt;html&gt;
@@ -208,9 +209,9 @@ e.g.
 &lt;/html&gt;
 </pre>
 
-<p>This is pretty cool. The only problem I have with the default <code>layout.mustache</code> template provided by Kostache, is that it's completely useless and serves as a bad example because the <code>content</code> partial is dumped inside a <code>&lt;p&gt;</code> tag! A &lt;div&gt; would have been a better choice. Plus, a good default would make it easier to copy-paste and improve upon, as well as promote best practices.</p>
+<p>This is pretty cool. The only problem I have with the default <code>layout.mustache</code> template provided by Kostache, is that it's completely useless and serves as a bad example because the <code>content</code> partial is dumped inside a <code>&lt;p&gt;</code> tag! A &lt;div&gt; would've been a better choice. Plus, a good default would make it easier to copy-paste and improve upon, as well as promote best practices.</p>
 
-<p><strong>Why not use the <a href="http://html5boilerplate.com/">html5 boilerplate</a> as the default?</strong> I would only use the HTML though, and not anything else. Remember, we're not looking for a bloated solution, just something useful to get started with. As long as the dev is aware that html5 boilerplate is being used as the basis, he could then proceed to look more into it, and incorporate other pieces that fit into his needs.</p>
+<p><strong>Why not use the <a href="http://html5boilerplate.com/">html5 boilerplate</a> as the default?</strong> I would only use the HTML though, and nothing else. Remember, we're not looking for a bloated solution, just something useful to get started with. As long as the dev is aware that html5 boilerplate is being used as the basis, he could then proceed to look more into it, and incorporate other pieces that fit into his needs.</p>
 
 <p>application/templates/layout.mustache</p>
 
@@ -283,19 +284,17 @@ hello world
 
 <h2>Global Variables</h2>
 
-<p>Yep, you read that correctly, <strong>global variables.</strong> Zombor has often professed his disgust towards global vars in the past. However, despite his strong stance on the issue, what's funny to me is that all variables defined in the view class are accessible in both the mustache template and it's partials, effectively mimicking the behaviour of a global variable :)</p>
+<p>Yep, you read that correctly, <strong>global variables.</strong> Zombor has often professed his disgust towards global vars in the past. However, despite his strong stance on the issue, what's funny to me is that all variables defined in a view class are accessible in both the mustache template and its partials, effectively mimicking the behaviour of a global variable :)</p>
 
 <p>e.g.</p>
 
 <pre class="brush:php">
-// Controller
 class Controller_Welcome extends Controller {
 
 	public function action_index() {}
 
 } // Controller_Welcome
 
-// View
 class View_Welcome_Index extends Kostache_Layout {
 
 	protected $_partials = array(
@@ -307,23 +306,19 @@ class View_Welcome_Index extends Kostache_Layout {
 	 */
 	public $title = 'luls';
 
-} // End View_Welcome_Index
+} // View_Welcome_Index
 
-$title is accessible in all of the following templates:
+Given the above, $title is accessible as {{title}} in
+all of the following templates:
 
 // Partial (application/templates/widget.mustache)
-{{title}}
-
 // Partial (application/templates/welcome/index.mustache)
-{{title}}
-
 // Template (application/templates/layout.mustache)
-{{title}}
 </pre>
 
 <h2>Precedence</h2>
 
-<p>What happens if a class property and method share the same name? Certainly, nothing magical. The method takes priority.</p>
+<p>What happens if a class field and method share the same name? Certainly, nothing magical. The method takes priority.</p>
 
 <pre class="brush:php">
 class View_Welcome_Index extends Kostache_Layout {
@@ -335,10 +330,10 @@ class View_Welcome_Index extends Kostache_Layout {
 		return 'method';
 	}
 
-} // End View_Welcome_Index
+} // View_Welcome_Index
 </pre>
 
-<p>Given the above, <code>{{title}}</code> will echo 'method'.</p>
+<p>Given the above, <code>{{title}}</code> will echo "method".</p>
 
 <h2>Visibility</h2>
 
