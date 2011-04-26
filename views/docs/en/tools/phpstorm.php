@@ -112,7 +112,7 @@
 	<p><img src="/assets/images/tools/phpstorm/use_tab_character.png" alt="Use Tab Character"></p>
 </div>
 
-<p>Sometimes those pesky spaces can creep into a project, e.g. when copy-pasting a code from the web. In such a case, simply <code>Ctrl+A</code> + <code>Edit > Convert Indents to Tabs</code>. Done.</p>
+<p>Sometimes those pesky spaces can creep into a project, e.g. when copy-pasting code from the web. In such a case, simply press <code>Ctrl+A</code> + <code>Edit > Convert Indents to Tabs</code>. Done.</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/convert_indents_to_tabs.png" alt="Convert Indents to Tabs"></p>
@@ -134,7 +134,7 @@
 
 <h2>Column Mode</h2>
 
-<p>Column mode comes in handy when you want to edit several lines simultaneously.</p>
+<p>Column mode comes in handy when you want to edit several lines, simultaneously.</p>
 
 <div class="image">
 	<p><img src="/assets/images/tools/phpstorm/column_mode1.png" alt="Column Mode 1"></p>
