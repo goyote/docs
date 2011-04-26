@@ -1,12 +1,12 @@
 * { margin: 0; padding: 0; }
-body { color: #333; font: 13px/18px Tahoma, sans-serif; background: #B4B4B4; }
+body { color: #333; font: 13px/18px Tahoma, sans-serif; background: #AAB4BB; }
 a { text-decoration: none; color: #0041CC; }
 a:hover, a:focus { color: #00B7FF; }
 a:active { color: red; }
 a img { border: 0; }
 
-#container { width: 960px; margin: 10px auto; background: #F1EDED;
-	border: 1px solid #8B8B8B; position: relative; }
+#container { width: 960px; margin: auto; background: #F1EDED;
+	border: 1px solid #8B8B8B; border-top: 0; position: relative; }
 #container > div { /*padding: 0 12px 6px;*/ }
 
 #logo { position: relative; top: 20px; left: 16px; }
@@ -38,7 +38,7 @@ a img { border: 0; }
 #main { margin: 12px 0 12px 12px; background: #fff; width: 668px; float: left; border: 1px solid #D5E3E1; }
 #main > div { padding: 20px; border: 1px solid #FFF; }
 #main h1 { font-size: 28px; line-height: 29px; color: #222; margin: 0 0 20px; }
-#main h2 { font-size: 20px; line-height: 21px; border-bottom: 1px solid #E0E0E0; padding: 0 0 2px; }
+#main h2 { font-size: 20px; line-height: 21px; border-bottom: 1px solid #ccc; padding: 0 0 2px; }
 #main h3 { font-size: 16px; line-height: 17px; }
 #main h2, #main h3 { margin: 30px 0 20px; }
 #main h1,
@@ -91,3 +91,4 @@ select { cursor: pointer; }
 .note { background: #E8F3FF; padding: 15px; margin: 0 0 20px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
 .note p:last-child { margin: 0 !important; }
 small { margin: 0 0 0 10px; }
+.news {}
