@@ -118,3 +118,27 @@
 	<p><img src="/assets/images/tools/phpstorm/convert_indents_to_tabs.png" alt="Convert Indents to Tabs"></p>
 </div>
 
+<h2>Validation</h2>
+
+<p>Validation is like a dude standing behind you while you code, just waiting for you to make a mistake so he can call you out. Without validation in the IDE, you can spend hours debugging your code, scratching your head wondering what when wrong, when it turns out you forgot to place a semicolon at the end of a statement, or you mistyped a variable, or wrote something stupid like "<code>else (...)</code> {" <- true story :S</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/validation1.png" alt="Code Completion 1"></p>
+	<p><img src="/assets/images/tools/phpstorm/validation2.png" alt="Code Completion 2"></p>
+	<p><img src="/assets/images/tools/phpstorm/validation3.png" alt="Code Completion 3"></p>
+	<p><img src="/assets/images/tools/phpstorm/validation4.png" alt="Code Completion 4"></p>
+	<p><img src="/assets/images/tools/phpstorm/validation5.png" alt="Code Completion 5"></p>
+	<p><img src="/assets/images/tools/phpstorm/validation6.png" alt="Code Completion 6"></p>
+	<p><img src="/assets/images/tools/phpstorm/validation7.png" alt="Code Completion 7"></p>
+</div>
+
+<h2>Column Mode</h2>
+
+<p>Column mode comes in handy when you want to edit several lines simultaneously.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/column_mode1.png" alt="Column Mode 1"></p>
+	<p><img src="/assets/images/tools/phpstorm/column_mode2.png" alt="Column Mode 2"></p>
+	<p>Press <code>Shift+Alt+Insert</code> to toggle on and off!</p>
+</div>
+
