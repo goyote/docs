@@ -96,7 +96,7 @@ abstract class Controller extends Kohana_Controller {
 		{
 			if ($directory = $this->request->directory())
 			{
-				// We have a directory set in the route
+				// Use the directory set in the route
 				$directory .= '/';
 			}
 
@@ -127,7 +127,7 @@ abstract class Controller extends Kohana_Controller {
 <p>Extending the previous controller has the following effects:</p>
 
 <ol>
-	<li>It avoids writing redundant crap like <code>$this->response->body(new View_Welcome_Index)</code> in every action, or at the very least manually instantiating the view class.</li>
+	<li>It avoids writing redundant stuff like <code>$this->response->body(new View_Welcome_Index)</code> in every action, or at the very least manually instantiating the view class.</li>
 	<li>Speeds up development <code>===</code> one less thing to worry about.</li>
 	<li>Forces intuitive file organization (view/controller/action.php) <code>===</code> win for your peers.</li>
 </ol>
@@ -147,6 +147,19 @@ class Controller_Welcome extends Controller {
 </pre>
 
 <p>You'll notice lighter controllers when using Kostache.</p>
+
+<p>You're free to override any variable set in the view class, directly in the controller.</p>
+
+<pre class="brush:php">
+class Controller_Welcome extends Controller {
+
+	public function action_index()
+	{
+		$this->layout->title = 'New title';
+	}
+
+} // Controller_Welcome
+</pre>
 
 <h3>View Class</h3>
 
