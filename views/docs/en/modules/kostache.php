@@ -58,9 +58,9 @@ Kohana::modules(array(
 
 <h2>Hello World!</h2>
 
-<p>I know you're dying for a juicy hello world tutorial; you love those don't you ;) Buckle up, here goes.</p>
+<p>I know you're dying for a hello world tutorial. Buckle up, here goes.</p>
 
-<p>So far with views, you've been using the handy dandy template controller. Sadly, Kostache doesn't provide one for you; doesn't matter, we'll create one ourselves! You can either create a layout controller, or in my case, simply hijack the controller class. If later down the road you find the need to extend the normal controller class, you may do so by extending <code>Kohana_Controller</code>.</p>
+<p>So far with views, you've been using the handy dandy template controller. Sadly, Kostache doesn't provide one for you; no worries, we'll create one ourselves! You can either create a layout controller, or in my case, simply hijack the controller class. If later down the road you find the need to extend the normal controller class, you may do so by extending <code>Kohana_Controller</code>.</p>
 
 <p>application/classes/controller.php <small>Based on <a href="https://github.com/vendo/core/blob/develop/classes/controller.php">Vendo</a>.</small></p>
 
@@ -282,9 +282,9 @@ hello world
 
 <p>Fire up a browser and load <code>example.com/welcome</code></p>
 
-<h2>Global Variables</h2>
+<h2>Variable Scope</h2>
 
-<p>Yep, you read that correctly, <strong>global variables.</strong> Zombor has often professed his disgust towards global vars in the past. However, despite his strong stance on the issue, what's funny to me is that all variables defined in a view class are accessible in both the mustache template and its partials, effectively mimicking the behaviour of a global variable :)</p>
+<p>Templates and partials have access to the same data.</p>
 
 <p>e.g.</p>
 
@@ -311,14 +311,26 @@ class View_Welcome_Index extends Kostache_Layout {
 Given the above, $title is accessible as {{title}} in
 all of the following templates:
 
-// Partial (application/templates/widget.mustache)
-// Partial (application/templates/welcome/index.mustache)
 // Template (application/templates/layout.mustache)
+&lt;p&gt;{{title}}&lt;/p&gt;
+&lt;p&gt;{{&gt;content}}&lt;/p&gt;
+&lt;p&gt;{{&gt;widget}}&lt;/p&gt;
+
+// Partial (application/templates/widget.mustache)
+{{title}}
+
+// Partial (application/templates/welcome/index.mustache)
+{{title}}
+	
+// Result
+&lt;p&gt;luls&lt;/p&gt;
+&lt;p&gt;luls&lt;/p&gt;
+&lt;p&gt;luls&lt;/p&gt;
 </pre>
 
 <h2>Precedence</h2>
 
-<p>What happens if a class field and method share the same name? Certainly, nothing magical. The method takes priority.</p>
+<p>If a class field and method share the same name, the method takes priority.</p>
 
 <pre class="brush:php">
 class View_Welcome_Index extends Kostache_Layout {
@@ -331,9 +343,32 @@ class View_Welcome_Index extends Kostache_Layout {
 	}
 
 } // View_Welcome_Index
+
+{{title}} // "method"
 </pre>
 
-<p>Given the above, <code>{{title}}</code> will echo "method".</p>
+<p>This enables interesting logic:</p>
+
+<pre class="brush:php">
+class View_About_Clients extends Kostache_Layout {
+
+	public $title = 'Partnerships and Client List';
+
+} // View_About_Clients
+
+abstract class Kostache_Layout extends Kohana_Kostache_Layout {
+
+	public $website = ' — WebApp';
+
+	public function title()
+	{
+		return $this->title.$this->website;
+	}
+
+} // View_About_Clients
+
+{{title}} // "Partnerships and Client List — WebApp"
+</pre>
 
 <h2>Visibility</h2>
 
@@ -344,15 +379,18 @@ class View {
 
 	public function visible()
 	{
-		// {{visible}}
+		return 'visible';
 	}
 
 	protected function not_visible()
 	{
-		// In other words, not reachable through {{not_visible}}
+		return 'not_visible';
 	}
 
 }
+
+{{visible}} // "visible"
+{{not_visible}} // ""
 </pre>
 
 <h2>Passing Values to the Template</h2>
