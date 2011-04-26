@@ -7,7 +7,9 @@
 <p><strong>News:</strong></p>
 
 <ul>
-	<li><a href="/<?php echo I18n::$lang ?>/modules/kostache">Kostache</a> guide started! Expect typo fixes, wording changes, and further examples in the days to come!</li>
+	<li>I'm about to start work on the next guide: the unittest module!</li>
+	<li>Added <a href="/<?php echo I18n::$lang ?>/helpers/url">URL</a> guide. So far I covered the <code>base()</code> method.</li>
+	<li><a href="/<?php echo I18n::$lang ?>/modules/kostache">Kostache</a> guide started! Pragmas and partials will be covered soon.</li>
 </ul>
 	
 <p class="disclaimer"><strong>Disclaimer:</strong></p>

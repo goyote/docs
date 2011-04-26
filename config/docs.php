@@ -58,6 +58,7 @@ return array(
 				'Feed' => '/helpers/feed',
 				'Num' => '/helpers/num',
 				'Text' => '/helpers/text',
+				'URL' => '/helpers/url',
 			),
 		),
 		'Tools' => array(
@@ -107,15 +108,20 @@ return array(
 				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/feed',
 				'API Browser' => 'http://kohanaframework.org/3.1/guide/api/Feed',
 			),
+			'num' => array(
+				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_numbers',
+				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/num',
+				'API Browser' => 'http://kohanaframework.org/guide/api/Num',
+			),
 			'text' => array(
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php#how_to_use_the_text_class',
 				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/text',
 				'API Browser' => 'http://kohanaframework.org/guide/api/Text',
 			),
-			'num' => array(
-				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_numbers',
-				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/num',
-				'API Browser' => 'http://kohanaframework.org/guide/api/Num',
+			'url' => array(
+				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php#how_to_use_the_url_class',
+				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/url',
+				'API Browser' => 'http://kohanaframework.org/3.1/guide/api/URL',
 			),
 		),
 		'tools' => array(
