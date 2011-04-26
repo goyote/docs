@@ -1,3 +1,4 @@
+html { overflow-y: scroll;}
 * { margin: 0; padding: 0; }
 body { color: #333; font: 13px/18px Tahoma, sans-serif; background: #AAB4BB; }
 a { text-decoration: none; color: #0041CC; }
