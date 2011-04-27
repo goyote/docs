@@ -21,7 +21,7 @@
 	<img src="/assets/images/tools/phpstorm/go_to_class.png" alt="Go to Class">
 </p>
 
-<p>To search for a class field or method, press <code>Ctrl+Alt+Shift+N</code>. Sadly, it won't work for constants :(</p>
+<p>To search for a class field, constant or method, press <code>Ctrl+Alt+Shift+N</code>.</p>
 
 <div class="image">
 	<img src="/assets/images/tools/phpstorm/go_to_symbol.png" alt="Go to Symbol">
