@@ -6,23 +6,23 @@ a:hover, a:focus { color: #00B7FF; }
 a:active { color: red; }
 a img { border: 0; }
 
-#container { width: 960px; margin: auto; background: #F1EDED;
+#container { width: 960px; margin: auto; background: #EDEFF1;
 	border: 1px solid #8B8B8B; border-top: 0; position: relative; }
 #container > div { /*padding: 0 12px 6px;*/ }
 
-#logo { position: relative; top: 20px; left: 16px; }
+#logo { position: relative; top: 11px; left: 15px; }
 
-#nav { position: absolute; top: 45px; right: 0; width: 568px; float: right; list-style: none; }
+#nav { position: absolute; top: 17px; right: 0; width: 790px; float: right; list-style: none; }
 #nav > li { float: left; margin: 0 7px 0 0; }
-#nav a { font-size: 14px; color: #4A4141; display: block; padding: 6px 11px; }
+#nav a { font-size: 16px; color: #1C3547; display: block; padding: 8px 11px; }
 #nav > li > a { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; background: #C3E6D6; }
 #nav > li > a:hover, #nav > li > a:focus { background: #CB3600; color: #fff; }
-#nav ul { list-style: none; padding: 10px 0 10px; position: absolute; left: -999em; width: 210px; background: #2774C6;
+#nav ul { list-style: none; padding: 10px 0 10px; position: absolute; left: -999em; width: 230px; background: #2774C6;
 	-moz-border-radius: 0 3px 3px 3px; -webkit-border-radius: 0 3px 3px 3px; border-radius: 0 3px 3px 3px; }
 #nav li:hover ul { left: auto; }
-#nav > li:hover > a { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; padding-bottom: 9px; }
+#nav > li:hover > a { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; padding-bottom: 10px; }
 #nav > li:first-child:hover > a { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
-#nav > li:first-child:hover > a { padding-bottom: 6px; }
+#nav > li:first-child:hover > a { padding-bottom: 8px; }
 #nav li:hover > a { background: #2774C6; color: #fff; }
 #nav ul li {  }
 #nav ul a { color: #fff; border-bottom: 1px solid #1658A9; }
@@ -34,7 +34,7 @@ a img { border: 0; }
 #top { clear: both; margin: 0 0 4px; }
 #top .crumbs { padding: 0 0 0 20px; }
 
-#header { /*margin: 0 0 38px;*/ background: #fff; padding: 0 12px 33px; }
+#header { /*margin: 0 0 38px;*/ background: #fff; padding: 0 12px 11px; }
 
 #main { margin: 12px 0 12px 12px; background: #fff; width: 668px; float: left; border: 1px solid #D5E3E1; }
 #main > div { padding: 20px; border: 1px solid #FFF; }
@@ -47,7 +47,7 @@ a img { border: 0; }
 #main h3,
 #main h4,
 #main h5,
-#main h6 { letter-spacing: -1px; color: #333; }
+#main h6 { letter-spacing: -1px; color: #213448; }
 #main h2 code { font-weight: normal; color: #555; font-size: 18px; }
 #main .normal { font-weight: normal; font-size: 13px; }
 #main .normal em { font-style: normal; margin: 0 5px 0 10px; color: #444; }
@@ -74,7 +74,7 @@ a img { border: 0; }
 #sidebar .box h3 { background: #4096B3; color: #fff; font-size: 16px; line-height: 17px; padding: 14px 0 8px 17px; font-weight: normal; }
 #sidebar .box .content { background: #DEEDFF; border: 7px solid #61A7BE; padding: 10px 0; }
 #sidebar .box .content ul { list-style: none; }
-#sidebar .box #toc ul a { font: 16px/17px 'Courier New', monospace; display: block; padding: 3px 0 3px 7px; margin: 0 7px 0 7px; }
+#sidebar .box #toc ul a { font: 15px/17px Consolas, 'Courier New',monospace; display: block; padding: 3px 3px 3px 7px; margin: 0 7px 0 7px; }
 #sidebar .box #toc ul a:hover,
 #sidebar .box #toc ul a:focus { background: #00A6FF; color: #fff; }
 #sidebar .box #toc ul a:active { background: #ff0; color: #000; }

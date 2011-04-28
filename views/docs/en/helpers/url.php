@@ -90,3 +90,4 @@ echo URL::site("controller/action?lang=español&spaces=one two"); // "/demos/exa
 
 <h2>query<code>(array $params = NULL, $use_get = TRUE)</code></h2>
 
+<p><code>query()</code> is pretty much a smarter <code><a href="http://php.net/http_build_query">http_build_query()</a></code>.</p>

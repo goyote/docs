@@ -12,14 +12,19 @@ $(function() {
 	var li = [];
 	$('#main h2').each(function(i, element) {
 		var heading = $.trim($(element).text().replace(/\(.*?\)/, ''));
-		var href = heading.replace(/[()]+/g, '').replace(/\s+/g, '_');
+		var href = heading.replace(/[()]+/g, '').replace(/\s+/g, '_').toLowerCase();
 		element.id = href;
 		li.push('<li><a href="#'+href+'">'+heading+'</a></li>');
 	});
 
-	$('<ul>', {
-		html: li.join(' ')
-	}).appendTo('#toc');
+	if (li.length) {
+		$('<ul>', {
+			  html: li.join(' ')
+		  }).appendTo('#toc');
+	}
+	else {
+		$('#toc').parent().hide();
+	}
 
 	if (location.hash) {
 		location = location.hash;

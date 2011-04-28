@@ -24,7 +24,7 @@
 							)) ?>"><?php echo $lang['name'] ?></option>
 						<?php endforeach ?>
 					</select>
-					<a href="/" id="logo"><img src="/assets/images/kowut.png" alt="Kohana Docs"></a>
+					<a href="/" id="logo"><img src="/assets/images/kowut2.png" alt="Kohana Docs"></a>
 					<ul id="nav">
 						<?php foreach ($navigation as $text => $array): ?>
 							<li>
