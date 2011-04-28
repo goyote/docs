@@ -6,7 +6,7 @@
 
 <h2>File Completion</h2>
 
-<p>OMG, I just discovered how to "fix" file completion on any project.</p>
+<p>OMG, I just discovered how to "fix" file completion in any project.</p>
 
 <ol>
 	<li>
@@ -30,6 +30,22 @@
 		</div>
 	</li>
 </ol>
+
+<h2>Surround With</h2>
+
+<p>TextMate has a uber awesome feature, where you can wrap any piece of text with HTML by pressing <code>Ctrl+Shift+W</code>. I use this a lot.</p>
+
+<p>Unfortunately, PhpStorm does not provide the same power :( To achieve the same thing in PhpStorm, you have to press <code>Ctrl+Alt+T</code> <strong>- plus -</strong> <code>Enter</code>. Pressing <code>Enter</code> is the annoying extra step.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/surround_with1.png" alt="Surround With"></p>
+	<p><img src="/assets/images/tools/phpstorm/surround_with2.png" alt="Surround With"></p>
+	<p class="desc">Can we skip the above step?</p>
+	<p><img src="/assets/images/tools/phpstorm/surround_with3.png" alt="Surround With"></p>
+	<p><img src="/assets/images/tools/phpstorm/surround_with4.png" alt="Surround With"></p>
+</div>
+
+<p>Another tragedy, is Phpstorm can't mimic TextMate's <code>Ctrl+Shift+Cmd+W</code> functionality, which is the same thing but wrapping of several lines simultaneously.</p>
 
 <h2>Go to File</h2>
 
