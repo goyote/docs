@@ -18,7 +18,7 @@ a img { border: 0; }
 #nav > li > a { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; background: #C3E6D6; }
 #nav > li > a:hover, #nav > li > a:focus { background: #CB3600; color: #fff; }
 #nav ul { list-style: none; padding: 10px 0 10px; position: absolute; left: -999em; width: 230px; background: #2774C6;
-	-moz-border-radius: 0 3px 3px 3px; -webkit-border-radius: 0 3px 3px 3px; border-radius: 0 3px 3px 3px; }
+	-moz-border-radius: 0 3px 3px 3px; -webkit-border-radius: 0 3px 3px 3px; border-radius: 0 3px 3px 3px; z-index: 1; }
 #nav li:hover ul { left: auto; }
 #nav > li:hover > a { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; padding-bottom: 10px; }
 #nav > li:first-child:hover > a { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
