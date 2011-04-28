@@ -10,7 +10,7 @@
 	<li>Traffic update: <strong>477 visits</strong>.</li>
 	<li><a href="/<?php echo I18n::$lang ?>/helpers/url">URL</a> guide completed.</li>
 	<li>You might notice some UI changes in the header ;) I'm digging it.</li>
-	<li>Yesterday, I received a msg on GitHub by one of the main devs behind PhpStorm, Alexey Gopachenko! Further proving, there awesomeness.</li>
+	<li>Yesterday, I received a msg on GitHub by one of the main devs behind PhpStorm, Alexey Gopachenko! Updating me on a recent fix, how cool is that?</li>
 	<li>kowut received it's first ever pull request, thanks fo3-nik5!</li>
 	<li>Expect a major rewrite of the Kostache guide today! I'm already done with half of it.</li>
 </ul>
