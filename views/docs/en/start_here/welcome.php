@@ -7,6 +7,7 @@
 <p><strong>News:</strong></p>
 
 <ul>
+	<li>Traffic update: <strong>477 visits</strong>.</li>
 	<li><a href="/<?php echo I18n::$lang ?>/helpers/url">URL</a> guide completed.</li>
 	<li>You might notice some UI changes in the header ;) I'm digging it.</li>
 	<li>Yesterday, I received a msg on GitHub by one of the main devs behind PhpStorm, Alexey Gopachenko! Further proving, there awesomeness.</li>
