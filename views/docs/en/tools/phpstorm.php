@@ -4,6 +4,33 @@
 
 <p>The following is a list of tips for improving your coding efficiency when using PhpStorm to create ko apps. I'll also be highlighting some of my favorite features, just to make sure you're at least aware of their existence, and try them out when ever you can.</p>
 
+<h2>File Completion</h2>
+
+<p>OMG, I just discovered how to "fix" file completion on any project.</p>
+
+<ol>
+	<li>
+		<p>In the project window, locate the directory serving as the <code>DocumentRoot</code>.</p>
+		<div class="image">
+			<img src="/assets/images/tools/phpstorm/file_completion1.png" alt="File Completion">
+		</div>
+	</li>
+	<li>
+		<p>Right click it, and select <code>Mark Directory As > Resource Root</code>.</p>
+		<div class="image">
+			<img src="/assets/images/tools/phpstorm/file_completion2.png" alt="File Completion">
+		</div>
+	</li>
+	<li>
+		<p>Done. File completion in images and CSS will now work!</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/file_completion3.png" alt="File Completion"></p>
+			<p><img src="/assets/images/tools/phpstorm/file_completion4.png" alt="File Completion"></p>
+			<p><img src="/assets/images/tools/phpstorm/file_completion5.png" alt="File Completion"></p>
+		</div>
+	</li>
+</ol>
+
 <h2>Go to File</h2>
 
 <p>TextMate is famous for its useful "Go to File" dialog box, which makes it a breeze to open any file in your project no matter where it's located. You simply type the name of the file that you want to open, and the editor finds it for you. This is a must have feature for any serious IDE, even though some of them don't support it, e.g. PhpED. PhpStorm takes it to another level by letting you search for a class name, file and symbol. File search is <a href="http://www.jetbrains.com/phpstorm/demos/find_files_like_a_pro/find_files_like_a_pro.html">better explained in this video</a>.</p>
