@@ -64,7 +64,7 @@
 							<div class="content" id="toc"></div>
 						</div>
 						<div class="box">
-							<h3>Recent Updates <a href="https://github.com/goyote/docs/commits/master.atom"><img src="/assets/images/rss.png" alt="RSS"></a></h3>
+							<h3>Recent Updates <a href="http://feeds.feedburner.com/kowut"><img src="/assets/images/rss.png" alt="RSS"></a></h3>
 							<div class="content">
 								<ul class="updates">
 									<?php foreach ($feed as $entry): ?>
