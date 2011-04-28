@@ -45,7 +45,7 @@
 	<p><img src="/assets/images/tools/phpstorm/surround_with4.png" alt="Surround With"></p>
 </div>
 
-<p>Another tragedy, is Phpstorm can't mimic TextMate's <code>Ctrl+Shift+Cmd+W</code> functionality, which is the same thing but wrapping of several lines simultaneously.</p>
+<p>Another tragedy, is Phpstorm can't mimic TextMate's <code>Ctrl+Shift+Cmd+W</code> functionality, which is the same thing but wrapping several lines simultaneously.</p>
 
 <h2>Go to File</h2>
 
