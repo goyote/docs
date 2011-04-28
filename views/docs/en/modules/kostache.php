@@ -424,6 +424,13 @@ public function title()
 </pre>
 
 <pre class="brush:php">
+public $title = '<b>foo</b>';
+
+{{title}} // escaped "<b>foo</b>"
+{{{title}}} // unescaped <b>"foo"</b>
+</pre>
+
+<pre class="brush:php">
 public $title = 'foo';
 
 // "Title: foo"
