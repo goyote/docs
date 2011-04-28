@@ -4,13 +4,13 @@
 
 <p>Now, on to business. kowut is a warm place where the editor likes to spend his time talking about <a href="http://kohanaframework.org">Kohana</a>. If you find anything useful great, if not that's ok. Done, the intro is over. Go have fun.</p>
 
-<p><strong>Lots of News:</strong></p>
+<p><strong>News:</strong></p>
 
 <ul>
+	<li><a href="/<?php echo I18n::$lang ?>/helpers/url">URL</a> guide completed.</li>
 	<li>You might notice some UI changes in the header ;) I'm digging it.</li>
 	<li>Yesterday, I received a msg on GitHub by one of the main devs behind PhpStorm, Alexey Gopachenko! Further proving, there awesomeness.</li>
 	<li>kowut received it's first ever pull request, thanks fo3-nik5!</li>
-	<li>I'm moments away from releasing a full, completed version of the <a href="/<?php echo I18n::$lang ?>/helpers/url">URL</a> guide. I'm proud of it.</li>
 	<li>Expect a major rewrite of the Kostache guide today! I'm already done with half of it.</li>
 </ul>
 	
