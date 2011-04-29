@@ -4,6 +4,27 @@
 
 <p>The following is a list of tips for improving your coding efficiency when using PhpStorm to create ko apps. I'll also be highlighting some of my favorite features, just to make sure you're at least aware of their existence, and try them out when ever you can.</p>
 
+<h2>git Integration</h2>
+
+<h3>Windows SSH Key</h3>
+
+<p>You need to convert your Private Putty Key to an OpenSSH Private Key</p>
+<p>Otherwise PHPStorm will ask you for your git Repo Password</p>
+
+<div class="image">
+    <p>Load your Private Putty Key</p>
+    <p><?php echo HTML::image('assets/images/tools/phpstorm/git_integration_1.png', array('alt' => 'Git Integration')); ?></p>
+
+    <p>Save it as id_rsa within the following Directory: %USERPROFILE%\.ssh</p>
+    <p><?php echo HTML::image('assets/images/tools/phpstorm/git_integration_2.png', array('alt' => 'Git Integration')); ?></p>
+
+    <p>git Settings</p>
+    <p><?php echo HTML::image('assets/images/tools/phpstorm/git_integration_3.png', array('alt' => 'Git Integration')); ?></p>
+
+    <p>Thats how my Git Settings looks like</p>
+    <p><?php echo HTML::image('assets/images/tools/phpstorm/git_integration_4.png', array('alt' => 'Git Integration')); ?></p>
+</div>
+
 <h2>File Completion</h2>
 
 <p>OMG, I just discovered how to "fix" file completion in any project.</p>
