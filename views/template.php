@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="<?php echo Kohana::$charset ?>">
 		<title><?php echo $article ?> | <?php echo $category ?> | Kohana Docs</title>
-		<link rel="stylesheet" href="/assets/css/global.css">
-		<link rel="stylesheet" type="text/css" href="/assets/css/goyoPHPDark.css">
+        <?php echo HTML::style('assets/css/global.css'); ?>
+        <?php echo HTML::style('assets/css/goyoPHPDark.css'); ?>
 		<link rel="canonical" href="<?php echo Route::url('docs', array(
 			'lang' => I18n::$lang,
 			'category' => $url['category'],
@@ -24,7 +24,7 @@
 							)) ?>"><?php echo $lang['name'] ?></option>
 						<?php endforeach ?>
 					</select>
-					<a href="/" id="logo"><img src="/assets/images/kowut2.png" alt="Kohana Docs"></a>
+                    <?php echo HTML::anchor('/', HTML::image('assets/images/kowut2.png', array('alt' => 'Kohana Docs')), array('id' => 'logo')); ?>
 					<ul id="nav">
 						<?php foreach ($navigation as $text => $array): ?>
 							<li>
@@ -64,7 +64,7 @@
 							<div class="content" id="toc"></div>
 						</div>
 						<div class="box">
-							<h3>Recent Updates <a href="http://feeds.feedburner.com/kowut"><img src="/assets/images/rss.png" alt="RSS"></a></h3>
+							<h3>Recent Updates <?php echo HTML::anchor('http://feeds.feedburner.com/kowut', HTML::image('assets/images/rss.png', array('alt' => 'RSS')), array('id' => 'logo')); ?></h3>
 							<div class="content">
 								<ul class="updates">
 									<?php foreach ($feed as $entry): ?>
@@ -82,9 +82,9 @@
 			<a href="#top" id="top-link">Top of Page</a>
 		</div>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-		<script type="text/javascript" src="/assets/js/jquery.toplink.js"></script>
-		<script type="text/javascript" src="/assets/js/jquery.scrollTo-1.4.2.js"></script>
-		<script type="text/javascript" src="/assets/js/shCoreAll.js"></script>
-		<script type="text/javascript" src="/assets/js/global.js"></script>
+        <?php echo HTML::script('assets/js/jquery.toplink.js'); ?>
+        <?php echo HTML::script('assets/js/jquery.scrollTo-1.4.2.js'); ?>
+        <?php echo HTML::script('assets/js/shCoreAll.js'); ?>
+        <?php echo HTML::script('assets/js/global.js'); ?>
 	</body>
 </html>
