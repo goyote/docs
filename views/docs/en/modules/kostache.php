@@ -141,7 +141,7 @@ class Controller_About extends Controller {
 
 // Which is the same thing as:
 class Controller_About extends Controller {
-	
+
 	public function action_index() {}
 	public function action_testimonials() {}
 	public function action_clients() {}
@@ -303,7 +303,7 @@ class Controller_Welcome extends Controller {
 		</pre>
 
 		<div class="image">
-			<p><img src="/assets/images/modules/kostache/layout_object.png" alt="Layout Object"></p>
+			<p><?php echo HTML::image('assets/images/modules/kostache/layout_object.png', array('alt' => 'Layout Object')); ?></p>
 		</div>
 	</li>
 	<li>
@@ -524,7 +524,7 @@ class View {
 	&lt;/head&gt;
 	&lt;body&gt;
 		&lt;div id="container"&gt;
-			{{&gt;content}}	
+			{{&gt;content}}
 		&lt;/div&gt;
 	&lt;/body&gt;
 &lt;/html&gt;
