@@ -185,3 +185,109 @@
 	<p>Press <code>Shift+Alt+Insert</code> to toggle on and off!</p>
 </div>
 
+<h2>GitHub</h2>
+
+<p>PhpStorm let's you checkout a project straight from the IDE! To do so, first you have to enter your login credentials in the settings tab:</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/github1.png" alt="GitHub"></p>
+	<p class="desc">Once you've entered your user credentials, press "test" to make sure everything is correct.</p>
+	<p><img src="/assets/images/tools/phpstorm/github2.png" alt="GitHub"></p>
+	<p><img src="/assets/images/tools/phpstorm/github3.png" alt="GitHub"></p>
+	<p>You can protect your passwords with a Master password.</p>
+</div>
+
+<p>Next, in the main menu, select <code>Version Control > Checkout from Version Control > GitHub</code>.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/github4.png" alt="GitHub"></p>
+</div>
+
+<p>And select the repository that you want to checkout.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/github5.png" alt="GitHub"></p>
+	<p><img src="/assets/images/tools/phpstorm/github6.png" alt="GitHub"></p>
+	<p>Finally, enter your passphrase.</p>
+</div>
+
+<h2>git</h2>
+
+<h3>Enable Version Control Integration</h3>
+
+<p>If you have a git project already started on your computer, you can enable version control integration, which will allow you to use git inside the IDE. To do so, select <code>Version Control > Enable Version Control Integration</code>.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/git1.png" alt="git"></p>
+	<p><img src="/assets/images/tools/phpstorm/git2.png" alt="git"></p>
+	<p><img src="/assets/images/tools/phpstorm/git3.png" alt="git"></p>
+	<p>As you can see my git repos are not at the root of the project.</p>
+</div>
+
+<p>When the repo is not at the root, you loose a lot of functionality, like "show the latest changes." I'm currently not sure if this is a bug or a misconfiguration.</p>
+
+<div class="image">
+	<p><img src="/assets/images/tools/phpstorm/git10.png" alt="git"></p>
+</div>
+	
+<p>Now that PhpStorm knows about git, you can do a couple of cool things:</p>
+
+<ol>
+	<li>
+		<p><strong>Inspect the History.</strong> Right click a directory, and from the context menu select <code>Git > Show History</code>.</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git4.png" alt="git"></p>
+		</div>
+		<p>To get some juice out of it, select the commit that you want to inspect. Right click it, and select <code>Show All Affected Paths</code>.</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git7.png" alt="git"></p>
+		</div>
+		<p>It will show you all of the files modified in that particular commit.</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git8.png" alt="git"></p>
+		</div>
+		<p>Right click a file that's interesting, and select <code>Show Diff</code> to further inspect the changes.</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git9.png" alt="git"></p>
+		</div>
+	</li>
+	<li>
+		<p><strong>Annotate.</strong> Annotate allows you to look at the blame on each line of a file. To bring it up, right click the file tab and select <code>Git > Annotate</code>.</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git5.png" alt="git"></p>
+		</div>
+	</li>
+	<li>
+		<p><strong>Diff.</strong> To quickly inspect the changes done to a file, select <code>Git > Compare with Latest Repository Version</code>:</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git6.png" alt="git"></p>
+		</div>
+	</li>
+</ol>
+
+
+<h3>Windows SSH Key</h3>
+
+<p>You need to convert your Private Putty Key to an OpenSSH Private Key, otherwise PhpStorm will ask you for your git repo password.</p>
+
+<ol>
+	<li>
+		<p>Load your Private Putty Key.</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git_integration_1.png" alt="Git Integration"></p>
+		</div>
+	</li>
+	<li>
+		<p>Save it as id_rsa within the following Directory: %USERPROFILE%\.ssh</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git_integration_2.png" alt="Git Integration"></p>
+		</div>
+	</li>
+	<li>
+		<p>git Settings</p>
+		<div class="image">
+			<p><img src="/assets/images/tools/phpstorm/git_integration_3.png" alt="Git Integration"></p>
+			<p><img src="/assets/images/tools/phpstorm/git_integration_4.png" alt="Git Integration"></p>
+		</div>
+	</li>
+</ol>
