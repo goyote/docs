@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="<?php echo Kohana::$charset ?>">
 		<title><?php echo $article ?> | <?php echo $category ?> | Kohana Docs</title>
-		<link rel="stylesheet" href="/assets/css/global.css">
-		<link rel="stylesheet" type="text/css" href="/assets/css/goyoPHPDark.css">
+		<?php echo Pack::css('docs') ?>
 		<link rel="canonical" href="<?php echo Route::url('docs', array(
 			'lang' => I18n::$lang,
 			'category' => $url['category'],
@@ -82,9 +81,6 @@
 			<a href="#top" id="top-link">Top of Page</a>
 		</div>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-		<script type="text/javascript" src="/assets/js/jquery.toplink.js"></script>
-		<script type="text/javascript" src="/assets/js/jquery.scrollTo-1.4.2.js"></script>
-		<script type="text/javascript" src="/assets/js/shCoreAll.js"></script>
-		<script type="text/javascript" src="/assets/js/global.js"></script>
+		<?php echo Pack::js('docs') ?>
 	</body>
 </html>
