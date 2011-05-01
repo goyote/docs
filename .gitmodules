@@ -1,0 +1,9 @@
+[submodule "system"]
+	path = system
+	url = git://github.com/kohana/core.git
+[submodule "modules/cache"]
+	path = modules/cache
+	url = git://github.com/kohana/cache.git
+[submodule "modules/pack"]
+	path = modules/pack
+	url = git://github.com/goyote/pack.git

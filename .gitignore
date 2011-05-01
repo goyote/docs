@@ -1,0 +1,5 @@
+logs
+.idea
+application/classes/cookie.php
+application/cache
+application/logs
