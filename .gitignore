@@ -1,3 +1,4 @@
-/logs/
+logs/error.log
+logs/access.log
 .idea/
 application/classes/cookie.php
