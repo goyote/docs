@@ -51,6 +51,11 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 // -- Configuration and initialization -----------------------------------------
 
 /**
+ * Set the default language
+ */
+I18n::lang('en-us');
+
+/**
  * Set the production level based on the server ip.
  */
 Kohana::$environment = ($_SERVER['SERVER_ADDR'] === '127.0.0.1')
