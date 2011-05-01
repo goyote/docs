@@ -1,5 +1,5 @@
-logs
-.idea
+logs/
+.idea/
 application/classes/cookie.php
-application/cache
-application/logs
+application/cache/
+application/logs/
