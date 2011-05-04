@@ -47,6 +47,7 @@ return array(
 		'Modules' => array(
 			'href' => '/modules/kostache',
 			'links' => array(
+				'Pack' => '/modules/pack',
 				'Kostache' => '/modules/kostache',
 				'UnitTest' => '/modules/unittest',
 			),
