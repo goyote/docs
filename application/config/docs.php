@@ -56,6 +56,7 @@ return array(
 			'links' => array(
 				'Arr' => '/helpers/arr',
 				'Cookie' => '/helpers/cookie',
+				'Debug' => '/helpers/debug',
 				'Feed' => '/helpers/feed',
 				'Num' => '/helpers/num',
 				'Text' => '/helpers/text',
