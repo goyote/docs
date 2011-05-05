@@ -63,6 +63,7 @@ a img { border: 0; }
 #top a:hover, #top a:focus,
 .updates a:hover, .updates a:focus,
 #main a:hover, #main a:focus { border-bottom: 1px solid; }
+#main #disqus_thread a { border-bottom: 0; }
 
 #main .references { float: right; background: #EFEFEF; width: 200px;
 	font-size: 11px; border: 1px solid #E3E3E3; margin: 0 0 10px 10px; }
