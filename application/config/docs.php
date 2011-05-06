@@ -59,6 +59,7 @@ return array(
 				'Cookie' => '/helpers/cookie',
 				'Debug' => '/helpers/debug',
 				'Feed' => '/helpers/feed',
+				'Inflector' => '/helpers/inflector',
 				'Num' => '/helpers/num',
 				'Text' => '/helpers/text',
 				'URL' => '/helpers/url',
@@ -110,6 +111,11 @@ return array(
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_atom_and_rss_feeds',
 				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/feed',
 				'API Browser' => 'http://kohanaframework.org/3.1/guide/api/Feed',
+			),
+			'inflector' => array(
+				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_the_inflector_class',
+				'KO2 Docs' => 'http://docs.kohanaphp.com/helpers/inflector',
+				'API Browser' => 'http://kohanaframework.org/3.1/guide/api/Inflector',
 			),
 			'num' => array(
 				'Unofficial Wiki' => 'http://kerkness.ca/wiki/doku.php?id=working_with_numbers',

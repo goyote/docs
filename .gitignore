@@ -1,3 +1,5 @@
 logs/*.log
 .idea/
 application/classes/cookie.php
+application/classes/controller/welcome.php
+
