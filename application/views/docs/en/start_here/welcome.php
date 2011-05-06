@@ -7,6 +7,7 @@
 <p><strong>News:</strong></p>
 
 <ul>
+	<li>The validation class is next!</li>
 	<li>Started work on the <a href="/<?php echo I18n::$lang ?>/helpers/inflector">inflector</a> guide. I could easily complete it today, but I'm gonna watch a movie instead.</li>
 	<li>Weird fact: the number one keyword on Google is "how to stop writing anything to div id." 33 hits, although totally unrelated to the topics discussed on this website.</li>
 	<li>Traffic update: <strong>817 visits</strong>.</li>
