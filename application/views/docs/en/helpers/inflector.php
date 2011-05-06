@@ -31,7 +31,7 @@ comments so far // lol turns out Text::number(0) doesn't return "zero"
 
 <p>Same thing as <code>singular()</code>, the only difference is you pass a singular word to it, instead of a plural one.</p>
 
-<p>The following two statements output the same result:</p>
+<p>The following two statements output the exact same result:</p>
 
 <pre class="brush:php">
 $count = 1;
@@ -43,7 +43,7 @@ echo Inflector::singular('comments', $count); // "comments"
 echo Inflector::plural('comment', $count); // "comments"
 </pre>
 
-<h3>Which one to choose?</h3>
+<h3>Which One to Choose?</h3>
 
 <p>Choose the one that requires less processing.</p>
 
@@ -70,21 +70,21 @@ echo Inflector::camelize($phrase); // "ladiesAndGentlemen�WeGotHim!"
 
 <pre class="brush:php">
 // Building on top of the previous example
-$phrase = Inflector::camelize($phrase);
+$phrase = Inflector::camelize($phrase); // "ladiesAndGentlemen�WeGotHim!"
 
 echo Inflector::decamelize($phrase); // ""
 </pre>
 
 <h2>humanize<code>($str)</code></h2>
 
-<p><code>humanize()</code> will replace any dashes and underscores found in a string, with spaces.</p>
+<p><code>humanize()</code> will replace dashes and underscores in a string, with spaces.</p>
 
 <pre class="brush:php">
 public function after()
 {
 	if (empty($this->template->title))
 	{
-		// Use the route to generate a document title
+		// Use the route to generate the document title
 		$this->template->title = ucwords(
 			Inflector::humanize($this->request->action())
 		);
