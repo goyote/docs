@@ -7,12 +7,9 @@
 <p><strong>News:</strong></p>
 
 <ul>
-	<li>I'm done with re-writing most of the Kostache guide for today. I need a break :s Pending are pragmas, a sub-section for how to unescape data, and... hopefully that's it! Typo and wording fixes are expected in the following days.</li>
-	<li>Traffic update: <strong>653 visits</strong>.</li>
-	<li><a href="/<?php echo I18n::$lang ?>/helpers/url">URL</a> guide completed.</li>
-	<li>You might notice some UI changes in the header ;) I'm digging it.</li>
-	<li>Yesterday, I received a msg on GitHub by one of the main devs behind PhpStorm, Alexey Gopachenko! Updating me on a recent fix, how cool is that?</li>
-	<li>kowut received it's first ever pull request, thanks fo3-nik5!</li>
+	<li>Started work on the <a href="/<?php echo I18n::$lang ?>/helpers/inflector">inflector</a> guide. I could easily complete it today, but I'm gonna watch a movie instead.</li>
+	<li>Weird fact: the number one keyword on Google is "how to stop writing anything to div id." 33 hits, although totally unrelated to the topics discussed on this website.</li>
+	<li>Traffic update: <strong>817 visits</strong>.</li>
 </ul>
 	
 <p class="disclaimer"><strong>Disclaimer:</strong></p>
