@@ -7,10 +7,8 @@
 <p><strong>News:</strong></p>
 
 <ul>
-	<li>The validation class is next!</li>
-	<li>Started work on the <a href="/<?php echo I18n::$lang ?>/helpers/inflector">inflector</a> guide. I could easily complete it today, but I'm gonna watch a movie instead.</li>
-	<li>Weird fact: the number one keyword on Google is "how to stop writing anything to div id." 33 hits, although totally unrelated to the topics discussed on this website.</li>
-	<li>Traffic update: <strong>817 visits</strong>.</li>
+	<li>Alright, big changes are coming! I've decided to fork the official userguide, and improve that. So all the content in this website will soon be moved to their respective official repos (or rather my forks.) Instead of wasting my time creating a bug on redmine for every typo I find, and subsequent pull requests, I've decided to keep this domain and simply host my own version of the userguide. If the Kohana project ever decides to pull any of my changes they may do so easily.</li>
+	<li>A tutorial site is under the works. I'm currently writing the first tut, tuto number 0! Writing real world bite size tutorials will allow me to further test Kohana components so I can write better docs. Stay tuned.</li>
 </ul>
 	
 <p class="disclaimer"><strong>Disclaimer:</strong></p>
